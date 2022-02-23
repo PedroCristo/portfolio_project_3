@@ -98,7 +98,18 @@ def game(random_word):
         print(F"""{Fore.RED}\n\n\t
         YOU LOSE, {player_name} THE RIGHT WORD WAS {random_word}!""")
         print(f"{Fore.RED}{hangman_logo[1]}")
-    display_score()              
+    display_score()  
+
+
+    def main():
+    """
+    Calls the get_word and game functions
+    """
+    random_word = get_word()
+    game(random_word)
+if __name__ == "__main__":
+
+    main()              
 
 
 
