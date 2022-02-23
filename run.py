@@ -67,6 +67,38 @@ def game(random_word):
                 full_word = "".join(word_as_list)
                 if "_" not in full_word:
                     guessed = True
+       elif len(guess) == len(random_word) and guess.isalpha():
+            if guess in guessed_words:
+                print(f"""{Fore.YELLOW}\n\t
+                YOU HAVE GUESSED THE WORD {guess} ALREADY.""")
+            elif guess != random_word:
+                print(f"{Fore.RED}\n\t{guess}, IS NOT THE WORD. TRY AGAIN!")
+                attempts -= 1
+                guessed_words.append(guess)
+            else:
+                guessed = True
+                full_word = random_word
+        else:
+            print(f"{Fore.YELLOW}\n\tIS NOT VALID GUESS.\n")
+        print(display_hangman(attempts))
+        word_space()
+        print("\n")
+    if guessed and len(guess) > 2 and len(
+       random_word) >= 6 and guessed_right <= 3:
+        print(f"{Fore.GREEN}{hangman_logo[3]}")
+        print(f"""{Fore.GREEN}\n\t
+        YOU WIN, {player_name} YOU HAVE GUESSED THE FULLY WORD AT ONCE!\n""")
+        score = score + extra_score + fully_word_score
+    elif guessed:
+        print(f"{Fore.GREEN}{hangman_logo[2]}")
+        print(f"""{Fore.GREEN}\n\t
+        YOU WIN, {player_name} YOU HAVE GUESSED THE RIGHT WORD!\n""")
+        score = score + extra_score
+    else:
+        print(F"""{Fore.RED}\n\n\t
+        YOU LOSE, {player_name} THE RIGHT WORD WAS {random_word}!""")
+        print(f"{Fore.RED}{hangman_logo[1]}")
+    display_score()              
 
 
 
