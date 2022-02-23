@@ -67,7 +67,7 @@ def game(random_word):
                 full_word = "".join(word_as_list)
                 if "_" not in full_word:
                     guessed = True
-       elif len(guess) == len(random_word) and guess.isalpha():
+        elif len(guess) == len(random_word) and guess.isalpha():
             if guess in guessed_words:
                 print(f"""{Fore.YELLOW}\n\t
                 YOU HAVE GUESSED THE WORD {guess} ALREADY.""")
