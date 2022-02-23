@@ -43,6 +43,30 @@ def game(random_word):
             print(f"{Fore.RED}\n\tYOU HAVE {attempts} ATTEMPT LEFT\n")
         guess = input(f"""{Fore.CYAN}\t\t
         GUESS A LETTER OR A WORD PLEASE:\n\t>>> """).upper()
+        if len(guess) == 1 and guess.isalpha():
+            if guess in guessed_letters:
+                print(f"""{Fore.YELLOW}\n\t
+                YOU HAVE ALREADY GUESSED THIS LETTER {guess}\n""")
+            elif guess not in random_word:
+                print(f"""{Fore.RED}\n\t
+                {guess} IS NOT IN THE WORD. TRY ANOTHER ONE!\n""")
+                attempts -= 1
+                guessed_letters.append(guess)
+                guessed_wrong.append(guess)
+            else:
+                print(f"""{Fore.GREEN}\n\t
+                GREAT, {guess} IS IN THE WORD! KEEP GOING!\n""")
+                guessed_letters.append(guess)
+                guessed_right += 1
+                score += correct_guessed
+                word_as_list = list(full_word)
+                indices = [i for i, letter in enumerate(
+                          random_word) if letter == guess]
+                for index in indices:
+                    word_as_list[index] = guess
+                full_word = "".join(word_as_list)
+                if "_" not in full_word:
+                    guessed = True
 
 
 
