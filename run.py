@@ -16,6 +16,20 @@ def get_word():
     return random_word.upper()
 
 
+def game(random_word):
+    full_word = " " * len(random_word)
+    guessed = False
+    guessed_letters = []
+    guessed_words = []
+    guessed_wrong = []
+    guessed right = 0
+    attempts = 7
+    score = 0
+    correct_guessed = 25
+    extra_score = 100
+    fully_word_score = 500  
+
+
 
 
 
