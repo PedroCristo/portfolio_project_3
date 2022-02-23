@@ -27,7 +27,11 @@ def game(random_word):
     score = 0
     correct_guessed = 25
     extra_score = 100
-    fully_word_score = 500  
+    fully_word_score = 500
+    print(F"{Fore.YELLOW}\n\tLET'S PLAY THE HANGMAN GAME!\n")
+    print(f"""{Fore.YELLOW}\t
+    YOU HAVE TO GUESS A WORD WITH {len(random_word)} LETTERS""")
+    print(display_hangman(attempts))  
 
 
 
