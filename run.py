@@ -4,8 +4,9 @@ import gspread
 
 from hangman_words import *
 
-
-
+import colorama
+from colorama import Fore, Back
+colorama.init(autoreset=True)
 
 
 def get_word():
