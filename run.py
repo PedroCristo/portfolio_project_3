@@ -22,7 +22,7 @@ def game(random_word):
     guessed_letters = []
     guessed_words = []
     guessed_wrong = []
-    guessed right = 0
+    guessed_right = 0
     attempts = 7
     score = 0
     correct_guessed = 25
