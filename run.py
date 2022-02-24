@@ -99,7 +99,8 @@ def game(random_word):
         print(F"""{Fore.RED}\n\n\t
         YOU LOSE, {player_name} THE RIGHT WORD WAS {random_word}!""")
         print(f"{Fore.RED}{hangman_logo[1]}")
-display_score()  
+    display_score()
+    exit_menu()  
 
 
 def display_hangman(attempts):
