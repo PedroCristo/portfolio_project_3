@@ -9,6 +9,20 @@ from colorama import Fore, Back
 colorama.init(autoreset=True)
 
 
+if __name__ == '__main__':
+
+    # Allows the user to input their own name to play the game
+    while True:
+        player_name = input(f"\n{Fore.CYAN}NAME:\n>>> ").strip().upper()
+        player_city = input(f"YOUR CITY:\n>>> ").strip().upper()
+        if len(player_name) > 0:
+            break
+    print(f"""{Fore.YELLOW}\n\t
+    HELLO {player_name}, WELCOME TO THE HANGMAN GAME!\n""")
+    print(f"{Fore.BLUE}{game_info[0]}")
+    input(f"""\n{Fore.CYAN}
+    {player_name}, PRESS ANY KEY TO START THE GAME.\n    >>> """)
+
 def get_word():
     """
     Get a random word from the word list in hangman_words.py
