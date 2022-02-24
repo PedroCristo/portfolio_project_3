@@ -146,6 +146,10 @@ def display_score():
 
 
 def exit_menu():
+    """
+    Give the player 3 choices in the end of any game.
+    Play again, Leaderboard and Exit the game
+    """
     while True:
         continue_playing = input(f"""{Fore.CYAN}\n\t
         A - PLAY AGAIN\t   B - LEADERBOARD\t C - EXIT THE GAME\n\t>>> """).lower()
