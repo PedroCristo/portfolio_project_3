@@ -36,7 +36,7 @@ def get_word():
 
 def game(random_word):
     global full_word
-    full_word = " " * len(random_word)
+    full_word = "_" * len(random_word)
     guessed = False
     guessed_letters = []
     guessed_words = []
@@ -53,7 +53,7 @@ def game(random_word):
     print(f"""{Fore.YELLOW}\t
     YOU HAVE TO GUESS A WORD WITH {len(random_word)} LETTERS""")
     print(display_hangman(attempts))
-    print(full_word)
+    word_space()
     print("\n")  
     while not guessed and attempts > 0:
         print(f"{Fore.RED}\n\tWRONG LETTERS GUESSED:\n\t{guessed_wrong}\n")
@@ -123,7 +123,7 @@ def game(random_word):
     exit_menu()  
 
 
- def word_space():
+def word_space():
     for i in full_word:
         print(i, end=" ")   
 
