@@ -4,6 +4,7 @@ import random
 
 from hangman_words import *
 from hangman_art import *
+from hangman_extras import *
 
 import colorama
 from colorama import Fore, Back
@@ -11,6 +12,10 @@ colorama.init(autoreset=True)
 
 
 print(f"{Fore.GREEN}{hangman_logo[0]}")
+typewriter(f"""
+Y O U   H A V E   A   P R E T T Y   N E C K   T O\t\n
+P L A Y   T H I S   G A M E   B Y   T H E   W A Y ! !\t\n
+E N T E R   Y O U R   N A M E\t\n\nA N D   G O O D   L U C K\n""")
 
 if __name__ == '__main__':
 
