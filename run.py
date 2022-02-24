@@ -102,6 +102,11 @@ def game(random_word):
 display_score()  
 
 
+def display_hangman(attempts):
+
+    return stages[attempts]
+
+
 
 def exit_menu():
     while True:
