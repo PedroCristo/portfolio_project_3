@@ -108,6 +108,11 @@ def display_hangman(attempts):
 
 
 
+def display_score():
+    print(f"\tSCORE: {score}")
+
+
+
 def exit_menu():
     while True:
         continue_playing = input(f"""{Fore.CYAN}\n\t
