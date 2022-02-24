@@ -99,8 +99,28 @@ def game(random_word):
         print(F"""{Fore.RED}\n\n\t
         YOU LOSE, {player_name} THE RIGHT WORD WAS {random_word}!""")
         print(f"{Fore.RED}{hangman_logo[1]}")
-    display_score()  
+display_score()  
 
+
+
+def exit_menu():
+    while True:
+        continue_playing = input(f"""{Fore.CYAN}\n\t
+        A - PLAY AGAIN\t   B - LEADERBOARD\t C - EXIT THE GAME\n\t>>> """).lower()
+        if continue_playing == "a":
+            print(f"\n\tYou have decided to continue playing the game.\n")
+            main()
+        elif continue_playing == "b":
+            display_leaderboard()
+        elif continue_playing == "c":
+            print(f"{Fore.RED}\n\tNow closing the game...")
+            print(f"""{Fore.CYAN}
+            \n\tThanks for playing, {player_name.capitalize()}.
+            \n\tHope to see you again soon!\n""")
+            sys.exit()
+        else:
+            print(f"""{Fore.YELLOW}\n\t
+            That is not a valid option. Please try again.\n""")
 
 def main():
     """
