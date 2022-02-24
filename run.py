@@ -123,6 +123,11 @@ def game(random_word):
     exit_menu()  
 
 
+ def word_space():
+    for i in full_word:
+        print(i, end=" ")   
+
+
 def display_hangman(attempts):
 
     return stages[attempts]
