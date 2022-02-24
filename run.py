@@ -10,6 +10,8 @@ from colorama import Fore, Back
 colorama.init(autoreset=True)
 
 
+print(f"{Fore.GREEN}{hangman_logo[0]}")
+
 if __name__ == '__main__':
 
     # Allows the user to input their own name to play the game
