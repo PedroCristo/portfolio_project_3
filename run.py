@@ -1,8 +1,9 @@
 import random
-import gspread
+# import gspread
 
 
 from hangman_words import *
+from hangman_art import *
 
 import colorama
 from colorama import Fore, Back
