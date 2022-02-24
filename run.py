@@ -35,13 +35,16 @@ def get_word():
 
 
 def game(random_word):
+    global full_word
     full_word = " " * len(random_word)
     guessed = False
     guessed_letters = []
     guessed_words = []
     guessed_wrong = []
+    global guessed_right
     guessed_right = 0
     attempts = 7
+    global score
     score = 0
     correct_guessed = 25
     extra_score = 100
