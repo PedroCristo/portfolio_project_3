@@ -102,7 +102,7 @@ def game(random_word):
     display_score()  
 
 
-    def main():
+def main():
     """
     Calls the get_word and game functions
     """
