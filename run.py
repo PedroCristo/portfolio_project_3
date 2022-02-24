@@ -129,7 +129,10 @@ def word_space():
 
 
 def display_hangman(attempts):
-
+    """
+    Display hangman stages from the start of the game
+    and change anytime the player doesn't guess the right letter
+    """
     return stages[attempts]
 
 
