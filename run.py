@@ -138,6 +138,9 @@ def display_hangman(attempts):
 
 
 def display_score():
+    """
+    Display player score during the game
+    """
     print(f"\tSCORE: {score}")
 
 
