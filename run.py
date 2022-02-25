@@ -1,16 +1,14 @@
 import random
-import gspread
+# import gspread
 from google.oauth2.service_account import Credentials
 
 
 from hangman_words import *
 from hangman_art import *
 from hangman_extras import *
-
 import colorama
 from colorama import Fore, Back
 colorama.init(autoreset=True)
-
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -26,6 +24,7 @@ SHEET = GSPREAD_CLIENT.open('hangman_leaderboard')
 leaderboard = SHEET.worksheet("leaderboard")
 
 data = leaderboard.get_all_values()
+
 
 
 print(f"{Fore.GREEN}{hangman_logo[0]}")
