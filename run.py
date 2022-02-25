@@ -164,6 +164,18 @@ def display_score():
     """
     print(f"\tSCORE: {score}")
 
+    
+def update_worksheet(data):
+    """
+    Update a new row in the Hangman worksheet
+    This updates a new row with the name, score and date.
+    """
+    print(f"\t{Fore.GREEN}Updating Leaderboard...\n")
+    worksheet_to_update = SHEET.worksheet("leaderboard")
+    worksheet_to_update.append_row([
+      str(player_name[0:7]), score, today_date, player_city])
+    print(f"\t{Fore.GREEN}Leaderboard Update successful.\n")
+
 
 
 def exit_menu():
