@@ -217,7 +217,7 @@ def exit_menu():
     """
     while True:
         continue_playing = input(f"""{Fore.CYAN}\n\t
-        A - PLAY AGAIN\t   B - LEADERBOARD\t C - EXIT THE GAME\n\t>>> """).lower()
+    A - PLAY AGAIN\t  B - LEADERBOARD\t C - EXIT THE GAME\n\t>>> """).lower()
         if continue_playing == "a":
             print(f"\n\tYou have decided to continue playing the game.\n")
             main()
@@ -242,7 +242,7 @@ def main():
     game(random_word)
 if __name__ == "__main__":
 
-    main()  
+    main()
 
 
 
