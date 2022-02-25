@@ -1,11 +1,13 @@
 import random
-# import gspread
+import gspread
 from google.oauth2.service_account import Credentials
 
 
 from hangman_words import *
 from hangman_art import *
 from hangman_extras import *
+
+
 import colorama
 from colorama import Fore, Back
 colorama.init(autoreset=True)
@@ -164,7 +166,7 @@ def display_score():
     """
     print(f"\tSCORE: {score}")
 
-    
+
 def update_worksheet(data):
     """
     Update a new row in the Hangman worksheet
@@ -177,6 +179,29 @@ def update_worksheet(data):
     print(f"\t{Fore.GREEN}Leaderboard Update successful.\n")
 
 
+
+def display_leaderboard():
+    """
+   Displays the players leaderboard showing
+   the 10 best scores
+    """
+    score_sheet = SHEET.worksheet("leaderboard").get_all_values()[1:]
+    for data in score_sheet:
+        data[1] = (data[1])
+
+    update_data = sorted(score_sheet, key=lambda x: int(x[1]), reverse=True)
+
+    print(f"{Fore.YELLOW}{game_info[1]}")
+    if(len(update_data) < 10):
+        count = len(update_data)
+    else:
+        count = 10
+
+    for i in range(0, count):
+        print(f"""
+        {Fore.GREEN}{i+1}\t{update_data[i][0]}\t  {update_data[i][1]}\t{
+        update_data[i][2]}\t{update_data[i][3]}""")
+        
 
 def exit_menu():
     """
