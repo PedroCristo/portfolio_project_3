@@ -2,7 +2,6 @@ import random
 import datetime
 import gspread
 from google.oauth2.service_account import Credentials
-
 from hangman_words import *
 from hangman_art import *
 from hangman_extras import *
@@ -30,8 +29,6 @@ leaderboard = SHEET.worksheet("leaderboard")
 
 data = leaderboard.get_all_values()
 
-
-
 print(f"{Fore.GREEN}{hangman_logo[0]}")
 typewriter(f"""
 Y O U   H A V E   A   P R E T T Y   N E C K   T O\t\n
@@ -52,6 +49,7 @@ if __name__ == '__main__':
     input(f"""\n{Fore.CYAN}
     {player_name}, PRESS ANY KEY TO START THE GAME.\n    >>> """)
 
+
 def get_word():
     """
     Get a random word from the word list in hangman_words.py
@@ -69,6 +67,7 @@ def game(random_word):
     guessed_wrong = []
     global guessed_right
     guessed_right = 0
+    global attempts
     attempts = 7
     global score
     score = 0
@@ -80,16 +79,20 @@ def game(random_word):
     YOU HAVE TO GUESS A WORD WITH {len(random_word)} LETTERS""")
     print(display_hangman(attempts))
     word_space()
-    print("\n")  
+    print("\n")
     while not guessed and attempts > 0:
         print(f"{Fore.RED}\n\tWRONG LETTERS GUESSED:\n\t{guessed_wrong}\n")
         display_score()
+        print(f"""\n{Fore.CYAN}
+        =================================================""")
         if attempts > 1:
             print(f"{Fore.YELLOW}\n\tYOU HAVE {attempts} attempts")
         else:
             print(f"{Fore.RED}\n\tYOU HAVE {attempts} ATTEMPT LEFT\n")
         guess = input(f"""{Fore.CYAN}\t\t
         GUESS A LETTER OR A WORD PLEASE:\n\t>>> """).upper()
+        print(f"""\n{Fore.CYAN}
+        =================================================""")
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
                 print(f"""{Fore.YELLOW}\n\t
@@ -144,15 +147,15 @@ def game(random_word):
     else:
         print(F"""{Fore.RED}\n\n\t
         YOU LOSE, {player_name} THE RIGHT WORD WAS {random_word}!""")
-        print(f"{Fore.RED}{hangman_logo[1]}") 
-    update_worksheet(data)    
+        print(f"{Fore.RED}{hangman_logo[1]}")
+    update_worksheet(data)
     display_score()
-    exit_menu()  
+    exit_menu()
 
 
 def word_space():
     for i in full_word:
-        print(i, end=" ")   
+        print(i, end=" ")
 
 
 def display_hangman(attempts):
@@ -161,7 +164,6 @@ def display_hangman(attempts):
     and change anytime the player doesn't guess the right letter
     """
     return stages[attempts]
-
 
 
 def display_score():
@@ -181,7 +183,6 @@ def update_worksheet(data):
     worksheet_to_update.append_row([
       str(player_name[0:7]), score, today_date, player_city])
     print(f"\t{Fore.GREEN}Leaderboard Update successful.\n")
-
 
 
 def display_leaderboard():
@@ -205,6 +206,8 @@ def display_leaderboard():
         print(f"""
         {Fore.GREEN}{i+1}\t{update_data[i][0]}\t  {update_data[i][1]}\t{
         update_data[i][2]}\t{update_data[i][3]}""")
+    print(f"""{Fore.YELLOW}\n
+    ==============================================================""")
 
 
 def exit_menu():
@@ -230,6 +233,7 @@ def exit_menu():
             print(f"""{Fore.YELLOW}\n\t
             That is not a valid option. Please try again.\n""")
 
+
 def main():
     """
     Calls the get_word and game functions
@@ -238,8 +242,7 @@ def main():
     game(random_word)
 if __name__ == "__main__":
 
-    main()              
-
+    main()  
 
 
 
