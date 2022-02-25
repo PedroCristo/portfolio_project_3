@@ -60,7 +60,7 @@ def get_word():
 
 def game(random_word):
     """
-    Game main functiom
+    Game main function
     """
     global full_word
     full_word = "_" * len(random_word)
@@ -162,6 +162,9 @@ def game(random_word):
 
 
 def word_space():
+    """
+    Add space in between letters in the random word
+    """
     for i in full_word:
         print(i, end=" ")
 
