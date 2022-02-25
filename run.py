@@ -37,7 +37,7 @@ E N T E R   Y O U R   N A M E\t\n\nA N D   G O O D   L U C K\n""")
 
 if __name__ == '__main__':
 
-    # Allows the user to input their own name to play the game
+    # Allows the user to input their own name and city to play the game
     while True:
         player_name = input(f"\n{Fore.CYAN}NAME:\n>>> ").strip().upper()
         player_city = input(f"YOUR CITY:\n>>> ").strip().upper()
@@ -59,6 +59,9 @@ def get_word():
 
 
 def game(random_word):
+    """
+    Game main functiom
+    """
     global full_word
     full_word = "_" * len(random_word)
     guessed = False
@@ -93,6 +96,9 @@ def game(random_word):
         GUESS A LETTER OR A WORD PLEASE:\n\t>>> """).upper()
         print(f"""\n{Fore.CYAN}
         =================================================""")
+        # Check if the player has already guess the letter
+        # Or if the letter guessed in not in the word
+        # And if the letter guessed is in the word
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
                 print(f"""{Fore.YELLOW}\n\t
@@ -133,6 +139,8 @@ def game(random_word):
         print(display_hangman(attempts))
         word_space()
         print("\n")
+        # Check if the player won the game guessing the word letter 
+        # by letter or the word at once or if the player loses the game
     if guessed and len(guess) > 2 and len(
        random_word) >= 6 and guessed_right <= 3:
         print(f"{Fore.GREEN}{hangman_logo[3]}")
