@@ -145,6 +145,7 @@ def game(random_word):
         print(F"""{Fore.RED}\n\n\t
         YOU LOSE, {player_name} THE RIGHT WORD WAS {random_word}!""")
         print(f"{Fore.RED}{hangman_logo[1]}") 
+    update_worksheet(data)    
     display_score()
     exit_menu()  
 
