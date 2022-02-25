@@ -1,16 +1,19 @@
 import random
+import datetime
 import gspread
 from google.oauth2.service_account import Credentials
-
 
 from hangman_words import *
 from hangman_art import *
 from hangman_extras import *
 
-
 import colorama
 from colorama import Fore, Back
 colorama.init(autoreset=True)
+
+# Import date from datetime
+date = datetime.datetime.today()
+today_date = date.strftime("%d/%m/%Y")
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -141,7 +144,7 @@ def game(random_word):
     else:
         print(F"""{Fore.RED}\n\n\t
         YOU LOSE, {player_name} THE RIGHT WORD WAS {random_word}!""")
-        print(f"{Fore.RED}{hangman_logo[1]}")
+        print(f"{Fore.RED}{hangman_logo[1]}") 
     display_score()
     exit_menu()  
 
@@ -201,7 +204,7 @@ def display_leaderboard():
         print(f"""
         {Fore.GREEN}{i+1}\t{update_data[i][0]}\t  {update_data[i][1]}\t{
         update_data[i][2]}\t{update_data[i][3]}""")
-        
+
 
 def exit_menu():
     """
