@@ -29,10 +29,10 @@ leaderboard = SHEET.worksheet("leaderboard")
 data = leaderboard.get_all_values()
 
 print(f"{Fore.GREEN}{hangman_logo[0]}")
-typewriter(f"""
-Y O U   H A V E   A   P R E T T Y   N E C K   T O\t\n
-P L A Y   T H I S   G A M E   B Y   T H E   W A Y ! !\t\n
-E N T E R   Y O U R   N A M E\t\n\nA N D   G O O D   L U C K ! !\n""")
+# typewriter(f"""
+# Y O U   H A V E   A   P R E T T Y   N E C K   T O\t\n
+# P L A Y   T H I S   G A M E   B Y   T H E   W A Y ! !\t\n
+# E N T E R   Y O U R   N A M E\t\n\nA N D   G O O D   L U C K ! !\n""")
 
 if __name__ == '__main__':
 
@@ -75,9 +75,7 @@ def game(random_word):
     guessed_words = []
     guessed_wrong = []
     guessed_right = 0
-    global attempts
     attempts = 7
-    global score
     score = 0
     print(F"{Fore.YELLOW}\n\tLET'S PLAY THE HANGMAN GAME!\n")
     print(f"""{Fore.YELLOW}\t
@@ -87,7 +85,7 @@ def game(random_word):
     print("\n")
     while not guessed and attempts > 0:
         print(f"{Fore.RED}\n\tWRONG LETTERS GUESSED:\n\t{guessed_wrong}\n")
-        display_score()
+        display_score(score)
         print(f"""\n{Fore.CYAN}
         =================================================""")
         if attempts > 1:
@@ -158,8 +156,8 @@ def game(random_word):
         print(F"""{Fore.RED}\n\n\t
         YOU LOSE, {player_name} THE RIGHT WORD WAS {random_word}!""")
         print(f"{Fore.RED}{hangman_logo[1]}")
-    update_worksheet(data)
-    display_score()
+    update_worksheet(data, score)
+    display_score(score)
     exit_menu()
 
 
@@ -179,14 +177,14 @@ def display_hangman(attempts):
     return stages[attempts]
 
 
-def display_score():
+def display_score(score):
     """
     Display player score during the game
     """
     print(f"\tSCORE: {score}")
 
 
-def update_worksheet(data):
+def update_worksheet(data, score):
     """
     Update a new row in the Hangman worksheet
     This updates a new row with the name, score and date.
