@@ -37,26 +37,26 @@ print(f"{Fore.GREEN}{hangman_logo[0]}")
 if __name__ == '__main__':
 
     # Allows the user to input their own name and city to play the game
+    # Allows the user to input their own name and city to play the game
     while True:
         player_name = input(f"\n{Fore.CYAN}NAME:\n>>> ").strip().upper()
         if len(player_name) == 0:
-           print(f"{Fore.RED}This is not a valid name!")
-           continue
+            print(f"{Fore.RED}This is not a valid name!")
+            continue
         else:
-           break  
-    while True:         
+            break
+    while True:
         player_city = input(f"{Fore.CYAN}YOUR CITY:\n>>> ").strip().upper()
         if len(player_city) == 0:
-           print(f"{Fore.RED}This is not a valid city!")
-           continue
-        else:    
-           break
+            print(f"{Fore.RED}This is not a valid city!")
+            continue
+        else:
+            break
     print(f"""{Fore.YELLOW}\n\t
     HELLO {player_name}, WELCOME TO THE HANGMAN GAME!\n""")
     print(f"{Fore.BLUE}{game_info[0]}")
     input(f"""\n{Fore.CYAN}
     {player_name}, PRESS ANY KEY TO START THE GAME.\n    >>> """)
-
 
     # CONSTS
     CORRECT_GUESSED = 25
@@ -83,12 +83,12 @@ def game(random_word):
     print(display_hangman(ATTEMPTS))
     word_space()
     print("\n")
-    while not guessed and  ATTEMPTS > 0:
+    while not guessed and ATTEMPTS > 0:
         print(f"{Fore.RED}\n\tWRONG LETTERS GUESSED:\n\t{guessed_wrong}\n")
         display_score(score)
         print(f"""\n{Fore.CYAN}
         =================================================""")
-        if  ATTEMPTS > 1:
+        if ATTEMPTS > 1:
             print(f"{Fore.YELLOW}\n\tYOU HAVE {ATTEMPTS} ATTEMPTS")
         else:
             print(f"{Fore.RED}\n\tYOU HAVE {ATTEMPTS} ATTEMPT LEFT\n")
@@ -143,10 +143,10 @@ def game(random_word):
 
 
 def final_result(guessed, guess, random_word, guessed_right, score):
-    """        
-    Check if the player won the game guessing the word letter 
+    """
+    Check if the player won the game guessing the word letter
     by letter or the word at once or if the player loses the game
-    """   
+    """
     if guessed and len(random_word) >= 6 and guessed_right <= 3:
         print(f"{Fore.GREEN}{hangman_logo[3]}")
         print(f"""{Fore.GREEN}\n\t
@@ -259,7 +259,6 @@ def main():
 if __name__ == "__main__":
 
     main()
-
 
 
 
