@@ -147,8 +147,7 @@ def final_result(guessed, guess, random_word, guessed_right, score):
     Check if the player won the game guessing the word letter 
     by letter or the word at once or if the player loses the game
     """   
-    if guessed and len(guess) > 2 and len(
-       random_word) >= 6 and guessed_right <= 3:
+    if guessed and len(random_word) >= 6 and guessed_right <= 3:
         print(f"{Fore.GREEN}{hangman_logo[3]}")
         print(f"""{Fore.GREEN}\n\t
         YOU WIN, {player_name} YOU HAVE GUESSED THE FULLY WORD AT ONCE!\n""")
