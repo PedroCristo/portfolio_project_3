@@ -138,10 +138,10 @@ def game(random_word):
         print(display_hangman(attempts))
         word_space(full_word)
         print("\n")
-    final_result(guessed, guess, random_word, guessed_right, score)
+    final_result(guessed, random_word, guessed_right, score)
 
 
-def final_result(guessed, guess, random_word, guessed_right, score):
+def final_result(guessed, random_word, guessed_right, score):
     """
     Check if the player won the game guessing the word letter
     by letter or the word at once or if the player loses the game
