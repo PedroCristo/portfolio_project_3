@@ -63,7 +63,7 @@ if __name__ == '__main__':
     EXTRA_SCORE = 100
     FULLY_WORD_SCORE = 500
     PLAY_AGAIN_MSG = f"""{Fore.CYAN}
-    A - PLAY AGAIN     
+    A - PLAY AGAIN
     B - LEADERBOARD
     C - EXIT THE GAME
     """
@@ -238,8 +238,8 @@ def exit_menu():
     while True:
         continue_playing = input(f"{PLAY_AGAIN_MSG}\n   >>>").lower()
         if continue_playing == "a":
-           print(f"\n\tYou have decided to continue playing the game.\n")
-           main()
+            print(f"\n\tYou have decided to continue playing the game.\n")
+            main()
         elif continue_playing == "b":
             display_leaderboard()
         elif continue_playing == "c":
@@ -247,7 +247,7 @@ def exit_menu():
             print(f"""{Fore.CYAN}
             \n\tThanks for playing, {player_name.capitalize()}.
             \n\tHope to see you again soon!\n""")
-            play_game = False
+            sys.exit()
         else:
             print(f"""{Fore.YELLOW}\n\t
             That is not a valid option. Please try again.\n""")
@@ -262,6 +262,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+    
 
 
 
