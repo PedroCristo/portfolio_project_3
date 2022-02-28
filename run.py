@@ -58,6 +58,12 @@ if __name__ == '__main__':
     {player_name}, PRESS ANY KEY TO START THE GAME.\n    >>> """)
 
 
+    # CONSTS
+    CORRECT_GUESSED = 25
+    EXTRA_SCORE = 100
+    FULLY_WORD_SCORE = 500
+
+
 def game(random_word):
     """
     Game main function
@@ -68,15 +74,11 @@ def game(random_word):
     guessed_letters = []
     guessed_words = []
     guessed_wrong = []
-    global guessed_right
     guessed_right = 0
     global attempts
     attempts = 7
     global score
     score = 0
-    correct_guessed = 25
-    extra_score = 100
-    fully_word_score = 500
     print(F"{Fore.YELLOW}\n\tLET'S PLAY THE HANGMAN GAME!\n")
     print(f"""{Fore.YELLOW}\t
     YOU HAVE TO GUESS A WORD WITH {len(random_word)} LETTERS""")
@@ -114,7 +116,7 @@ def game(random_word):
                 GREAT, {guess} IS IN THE WORD! KEEP GOING!\n""")
                 guessed_letters.append(guess)
                 guessed_right += 1
-                score += correct_guessed
+                score += CORRECT_GUESSED
                 word_as_list = list(full_word)
                 indices = [i for i, letter in enumerate(
                           random_word) if letter == guess]
@@ -146,12 +148,12 @@ def game(random_word):
         print(f"{Fore.GREEN}{hangman_logo[3]}")
         print(f"""{Fore.GREEN}\n\t
         YOU WIN, {player_name} YOU HAVE GUESSED THE FULLY WORD AT ONCE!\n""")
-        score = score + extra_score + fully_word_score
+        score = score + EXTRA_SCORE + FULLY_WORD_SCORE
     elif guessed:
         print(f"{Fore.GREEN}{hangman_logo[2]}")
         print(f"""{Fore.GREEN}\n\t
         YOU WIN, {player_name} YOU HAVE GUESSED THE RIGHT WORD!\n""")
-        score = score + extra_score
+        score = score + EXTRA_SCORE
     else:
         print(F"""{Fore.RED}\n\n\t
         YOU LOSE, {player_name} THE RIGHT WORD WAS {random_word}!""")
