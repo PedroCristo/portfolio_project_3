@@ -217,10 +217,10 @@ def display_leaderboard():
     update_data = sorted(score_sheet, key=lambda x: int(x[1]), reverse=True)
 
     print(f"{Fore.YELLOW}{game_info[1]}")
-    if(len(update_data) < 10):
+    if(len(update_data) < 15):
         count = len(update_data)
     else:
-        count = 10
+        count = 15
 
     for i in range(0, count):
         print(f"""
