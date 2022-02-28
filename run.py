@@ -62,6 +62,11 @@ if __name__ == '__main__':
     CORRECT_GUESSED = 25
     EXTRA_SCORE = 100
     FULLY_WORD_SCORE = 500
+    PLAY_AGAIN_MSG = f"""{Fore.CYAN}
+    A - PLAY AGAIN     
+    B - LEADERBOARD
+    C - EXIT THE GAME
+    """
 
 
 def game(random_word):
@@ -231,11 +236,10 @@ def exit_menu():
     Play again, Leaderboard and Exit the game
     """
     while True:
-        continue_playing = input(f"""{Fore.CYAN}\n\t
-        A - PLAY AGAIN\tB - LEADERBOARD\tC - EXIT THE GAME\n\t>>> """).lower()
+        continue_playing = input(f"{PLAY_AGAIN_MSG}\n   >>>").lower()
         if continue_playing == "a":
-            print(f"\n\tYou have decided to continue playing the game.\n")
-            main()
+           print(f"\n\tYou have decided to continue playing the game.\n")
+           main()
         elif continue_playing == "b":
             display_leaderboard()
         elif continue_playing == "c":
@@ -243,7 +247,7 @@ def exit_menu():
             print(f"""{Fore.CYAN}
             \n\tThanks for playing, {player_name.capitalize()}.
             \n\tHope to see you again soon!\n""")
-            sys.exit()
+            play_game = False
         else:
             print(f"""{Fore.YELLOW}\n\t
             That is not a valid option. Please try again.\n""")
