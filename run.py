@@ -68,7 +68,6 @@ def game(random_word):
     """
     Game main function
     """
-    global full_word
     full_word = "_" * len(random_word)
     guessed = False
     guessed_letters = []
@@ -81,7 +80,7 @@ def game(random_word):
     print(f"""{Fore.YELLOW}\t
     YOU HAVE TO GUESS A WORD WITH {len(random_word)} LETTERS""")
     print(display_hangman(attempts))
-    word_space()
+    word_space(full_word)
     print("\n")
     while not guessed and attempts > 0:
         print(f"{Fore.RED}\n\tWRONG LETTERS GUESSED:\n\t{guessed_wrong}\n")
@@ -137,7 +136,7 @@ def game(random_word):
         else:
             print(f"{Fore.YELLOW}\n\tIS NOT VALID GUESS.\n")
         print(display_hangman(attempts))
-        word_space()
+        word_space(full_word)
         print("\n")
     final_result(guessed, guess, random_word, guessed_right, score)
 
@@ -166,7 +165,7 @@ def final_result(guessed, guess, random_word, guessed_right, score):
     exit_menu()
 
 
-def word_space():
+def word_space(full_word):
     """
     Add space in between letters in the random word
     """
