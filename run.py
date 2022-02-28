@@ -1,4 +1,3 @@
-import random
 import datetime
 import gspread
 from google.oauth2.service_account import Credentials
@@ -57,14 +56,6 @@ if __name__ == '__main__':
     print(f"{Fore.BLUE}{game_info[0]}")
     input(f"""\n{Fore.CYAN}
     {player_name}, PRESS ANY KEY TO START THE GAME.\n    >>> """)
-
-
-def get_word():
-    """
-    Get a random word from the word list in hangman_words.py
-    """
-    random_word = random.choice(words)
-    return random_word.upper()
 
 
 def game(random_word):
