@@ -75,23 +75,23 @@ def game(random_word):
     guessed_words = []
     guessed_wrong = []
     guessed_right = 0
-    attempts = 7
+    ATTEMPTS = 7
     score = 0
     print(F"{Fore.YELLOW}\n\tLET'S PLAY THE HANGMAN GAME!\n")
     print(f"""{Fore.YELLOW}\t
     YOU HAVE TO GUESS A WORD WITH {len(random_word)} LETTERS""")
-    print(display_hangman(attempts))
+    print(display_hangman(ATTEMPTS))
     word_space()
     print("\n")
-    while not guessed and attempts > 0:
+    while not guessed and  ATTEMPTS > 0:
         print(f"{Fore.RED}\n\tWRONG LETTERS GUESSED:\n\t{guessed_wrong}\n")
         display_score(score)
         print(f"""\n{Fore.CYAN}
         =================================================""")
-        if attempts > 1:
-            print(f"{Fore.YELLOW}\n\tYOU HAVE {attempts} attempts")
+        if  ATTEMPTS > 1:
+            print(f"{Fore.YELLOW}\n\tYOU HAVE {ATTEMPTS} ATTEMPTS")
         else:
-            print(f"{Fore.RED}\n\tYOU HAVE {attempts} ATTEMPT LEFT\n")
+            print(f"{Fore.RED}\n\tYOU HAVE {ATTEMPTS} ATTEMPT LEFT\n")
         guess = input(f"""{Fore.CYAN}\t\t
         GUESS A LETTER OR A WORD PLEASE:\n\t>>> """).upper()
         print(f"""\n{Fore.CYAN}
@@ -106,7 +106,7 @@ def game(random_word):
             elif guess not in random_word:
                 print(f"""{Fore.RED}\n\t
                 {guess} IS NOT IN THE WORD. TRY ANOTHER ONE!\n""")
-                attempts -= 1
+                ATTEMPTS -= 1
                 guessed_letters.append(guess)
                 guessed_wrong.append(guess)
             else:
@@ -129,14 +129,14 @@ def game(random_word):
                 YOU HAVE GUESSED THE WORD {guess} ALREADY.""")
             elif guess != random_word:
                 print(f"{Fore.RED}\n\t{guess}, IS NOT THE WORD. TRY AGAIN!")
-                attempts -= 1
+                ATTEMPTS -= 1
                 guessed_words.append(guess)
             else:
                 guessed = True
                 full_word = random_word
         else:
             print(f"{Fore.YELLOW}\n\tIS NOT VALID GUESS.\n")
-        print(display_hangman(attempts))
+        print(display_hangman(ATTEMPTS))
         word_space()
         print("\n")
         # Check if the player won the game guessing the word letter 
@@ -169,12 +169,12 @@ def word_space():
         print(i, end=" ")
 
 
-def display_hangman(attempts):
+def display_hangman(ATTEMPTS):
     """
     Display hangman stages from the start of the game
     and change anytime the player doesn't guess the right letter
     """
-    return stages[attempts]
+    return stages[ATTEMPTS]
 
 
 def display_score(score):
