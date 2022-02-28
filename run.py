@@ -139,8 +139,14 @@ def game(random_word):
         print(display_hangman(ATTEMPTS))
         word_space()
         print("\n")
-        # Check if the player won the game guessing the word letter 
-        # by letter or the word at once or if the player loses the game
+    final_result(guessed, guess, random_word, guessed_right, score)
+
+
+def final_result(guessed, guess, random_word, guessed_right, score):
+    """        
+    Check if the player won the game guessing the word letter 
+    by letter or the word at once or if the player loses the game
+    """   
     if guessed and len(guess) > 2 and len(
        random_word) >= 6 and guessed_right <= 3:
         print(f"{Fore.GREEN}{hangman_logo[3]}")
