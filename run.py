@@ -37,7 +37,6 @@ E N T E R   Y O U R   N A M E\t\n\nA N D   G O O D   L U C K ! !\n""")
 if __name__ == '__main__':
 
     # Allows the user to input their own name and city to play the game
-    # Allows the user to input their own name and city to play the game
     while True:
         player_name = input(f"\n{Fore.CYAN}NAME:\n>>> ").strip().upper()
         if len(player_name) == 0:
@@ -181,7 +180,7 @@ def word_space(full_word):
 def display_hangman(attempts):
     """
     Display hangman stages from the start of the game
-    and change anytime the player doesn't guess the right letter
+    and change anytime the player doesn't guess the right letterr
     """
     return stages[attempts]
 
@@ -207,8 +206,7 @@ def update_worksheet(data, score):
 
 def display_leaderboard():
     """
-   Displays the players leaderboard showing
-   the 10 best scores
+    Displays to the players the 15 best scores
     """
     score_sheet = SHEET.worksheet("leaderboard").get_all_values()[1:]
     for data in score_sheet:
@@ -232,8 +230,8 @@ def display_leaderboard():
 
 def exit_menu():
     """
-    Give the player 3 choices in the end of any game.
-    Play again, Leaderboard and Exit the game
+    Give to the player 3 choices at the end of the game.
+    Play again, Leaderboard, and Exit the game
     """
     while True:
         continue_playing = input(f"{PLAY_AGAIN_MSG}\n   >>>").lower()
