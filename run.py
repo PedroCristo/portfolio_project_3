@@ -60,7 +60,7 @@ if __name__ == '__main__':
 
     # CONSTS
     CORRECT_GUESSED = 25
-    EXTRA_SCORE = 100
+    EXTRA_SCORE = 200
     FULLY_WORD_SCORE = 500
     PLAY_AGAIN_MSG = f"""{Fore.CYAN}
     A - PLAY AGAIN
@@ -262,7 +262,7 @@ def main():
 if __name__ == "__main__":
 
     main()
-    
+
 
 
 
