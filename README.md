@@ -54,6 +54,7 @@ According to the site Gambiter, this game has been around since 1894 under the n
   - [Bugs](#bugs)
     - [Python Lines too Long](#python-lines-too-long)
     - [Fixed Bug](#fixed-bug)
+  - [Deployment of This Project](#deployment-of-this-project)
   
 - [Hangman - Game](#hangman---game)
 - [Introduction](#introduction)
@@ -98,6 +99,7 @@ According to the site Gambiter, this game has been around since 1894 under the n
   - [Bugs](#bugs)
     - [Python Lines too Long](#python-lines-too-long)
     - [Fixed Bug](#fixed-bug)
+  - [Deployment of This Project](#deployment-of-this-project)
 
 ## User Experience - UX
 
@@ -322,6 +324,28 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
 ### Fixed Bug
 ![Fix Bug](./assets/images/readme/hangman-issue-fixed.jpg)
 * I had to rebuild the logo using the program  Patorjk (ASCII Art Generator) to avoid these issues.
+
+## Deployment of This Project
+
+* This site was deployed by completing the following steps:
+
+1. Log in to [Heroku](https://id.heroku.com) or create an account
+2. On the main page click the button labelled New in the top right corner and from the drop-down menu select Create New App
+3. You must enter a unique app name
+4. Next select your region
+5. Click on the Create App button
+6. The next page is the project’s Deploy Tab. Click on the Settings Tab and scroll down to Config Vars
+7. Click Reveal Config Vars and enter port into the Key box and 8000 into the Value box and click the Add button
+8. Click Reveal Config Vars again and enter CREDS into the Key box and the Google credentials into the Value box
+9. Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes
+10. Repeat step 8 to add node.js. o Note: The Buildpacks must be in the correct order. If not click and drag them to move into the correct order
+11. Scroll to the top of the page and choose the Deploy tab
+12. Select Github as the deployment method
+13. Confirm you want to connect to GitHub
+14. Search for the repository name and click the connect button
+15. Scroll to the bottom of the deploy page and select the preferred deployment type
+16. Click either Enable Automatic Deploys for automatic deployment when you push updates to Github
+
 
 
 
