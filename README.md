@@ -57,6 +57,10 @@ According to the site Gambiter, this game has been around since 1894 under the n
   - [Deployment of This Project](#deployment-of-this-project)
   - [Forking This Project](#forking-this-project)
   - [Cloning This Project](#cloning-this-project)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Information Sources / Resources](#information-sources--resources)
+  - [Special Thanks](#special-thanks)
   
 - [Hangman - Game](#hangman---game)
 - [Introduction](#introduction)
@@ -104,6 +108,10 @@ According to the site Gambiter, this game has been around since 1894 under the n
   - [Deployment of This Project](#deployment-of-this-project)
   - [Forking This Project](#forking-this-project)
   - [Cloning This Project](#cloning-this-project)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Information Sources / Resources](#information-sources--resources)
+  - [Special Thanks](#special-thanks)
 
 ## User Experience - UX
 
@@ -371,6 +379,26 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
 6. Change the current working directory to the location that you want the cloned directory
 7. Type 'git clone' and paste the URL copied in step 3
 8. Press 'Enter' and the project is cloned
+
+## Credits
+
+### Content
+
+* All the content in the game is original 
+* The terminal function and template for the deployable application was provided by [Code Institute - Template](https://github.com/Code-Institute-Org/python-essentials-template)
+* The Python code for the typewriter was taken from the following tutorial: [Kwasii](https://www.youtube.com/watch?v=A_1THfBpCH
+* 
+### Information Sources / Resources
+
+* [W3Schools - Python](https://www.w3schools.com/python/)
+* [Stack Overflow](https://stackoverflow.com/)
+* [Scrimba - Pyhton](https://scrimba.com/learn/python)
+* [Gambiter](http://gambiter.com/paper-pencil/Hangman_game.html)
+
+
+## Special Thanks
+
+  * Special thanks to my mentor Sandeep Aggarwal, my colleagues at Code Institute, Kasia Bogucka, and Mairéad Gillic for their assistance throughout this project.
 
 
 
