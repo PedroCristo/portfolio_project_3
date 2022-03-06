@@ -40,6 +40,9 @@ According to the site Gambiter, this game has been around since 1894 under the n
     - [Leaderboard](#leaderboard)
     - [Exit Game](#exit-game)
     - [How to Play](#how-to-play)
+  - [Storage Data](#storage-data)
+    - [Code to Connect to Google Sheet](#code-to-connect-to-google-sheet)
+    - [Google Sheet Hangman Leaderboard](#google-sheet-hangman-leaderboard)
   
 - [Hangman - Game](#hangman---game)
 - [Introduction](#introduction)
@@ -70,6 +73,9 @@ According to the site Gambiter, this game has been around since 1894 under the n
     - [Leaderboard](#leaderboard)
     - [Exit Game](#exit-game)
     - [How to Play](#how-to-play)
+  - [Storage Data](#storage-data)
+    - [Code to Connect to Google Sheet](#code-to-connect-to-google-sheet)
+    - [Google Sheet Hangman Leaderboard](#google-sheet-hangman-leaderboard)
 
 ## User Experience - UX
 
@@ -213,6 +219,18 @@ The player has 7 attempts to try to guess the right word by inputting letters or
 * If the user guesses the right word they will see the [Winner Feature](#Hangman-Stage-9---Win)
 * If the player guessed the full word at once or at least no more than 3 letters guessed right before trying to guess the full word, they will win the game-winning 500 extra points and see this feature [Winner Feature / Extra Points](#Hangman-Stage-10---Win)
 * 7 letters guessed wrong and the player will see the [Loser Feature](#Hangman-Stage-8---lose)
+
+## Storage Data
+
+I have used a Google sheet to save the player name, city, score and date.  This sheet is connected to the code through the Google Drive and Google Sheet API by the Google Cloud Platform. This method allows me to send and receive data as I had access to the Google Sheet API credentials. I also added in the Config Vars to these credentials when I was deploying the project in Heroku. As this is sensitive data, I had to add the creds.json in the Git ignore file. This would ensure that these credentials are not pushed to the repository.
+
+### Code to Connect to Google Sheet
+
+![Code to Connect to Google Sheet](./assets/images/readme/hangman-creds.jpg)
+
+### Google Sheet Hangman Leaderboard
+
+![Google Sheet Hangman Leaderboard](./assets/images/readme/hangman-google-sheet.jpg)
 
 
 
