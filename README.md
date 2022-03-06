@@ -20,6 +20,13 @@ According to the site Gambiter, this game has been around since 1894 under the n
       - [Colours](#colours)
       - [Typography](#typography)
     - [Flowcharts](#flowcharts)
+  - [Features](#features)
+    - [Logo and Intro Message](#logo-and-intro-message)
+    - [Ask Player Name and City](#ask-player-name-and-city)
+      - [Empty Input for Name and City](#empty-input-for-name-and-city)
+    - [Welcome Message and Game Rules](#welcome-message-and-game-rules)
+  - [Game Features](#game-features)
+    - [Hangman Stage 1](#hangman-stage-1)
   
 * [Features](#features)
     * [Logo and Intro Message](#Logo-and-Intro-Message) 
@@ -89,3 +96,42 @@ According to the site Gambiter, this game has been around since 1894 under the n
 ### Flowcharts 
 ![Flowcharts](./assets/images/readme/hangman-flowcharts.jpg)<br>
 I spent time planning and thinking about the logic and flow behind the game to ensure I had a general idea of how it could be built. I created flowcharts to assist me with the logical flow throughout the application. The charts were generated using [Lucidchart](https://lucid.app/) Integration and are shown below.<br>
+
+## Features
+
+### Logo and Intro Message
+
+![Logo and Intro Message](./assets/images/readme/hangman-feature-1.jpg)
+
+* When the users reach the website, they will see this feature. The game logo and the intro message are displayed here.<br>
+
+### Ask Player Name and City
+
+![Ask Player Name and City](./assets/images/readme/hangman-feature-2.jpg)
+* After the player sees the intro feature the computer will ask the user's to input their name and city.<br>
+
+#### Empty Input for Name and City
+![Empty Input for Name and City](./assets/images/readme/hangman-feature-3.jpg)
+* If the player does not input their name and city this alert will appear.<br>
+
+### Welcome Message and Game Rules
+![Welcome Message and Game Rules](./assets/images/readme/hangman-feature-4.jpg)
+* After the user inputs their name and city, the program will display the welcome message and the game rules. The player then presses any key to start the game.<br>
+
+## Game Features
+
+### Hangman Stage 1
+![Game Feature](./assets/images/readme/hangman-feature-5.jpg)<br><br>
+
+This feature displays where the main scene happens. Here the user can play and see the following information about the game:
+* Numbers of letters choosen by the computer 
+* Hangman stages
+* Letters guessed right
+* Letters guessed wrong
+* Current score
+* Current number of attempts
+* Input to guess a letter or a full word
+* Input letters to either guess a letter only or the full word
+
+
+
