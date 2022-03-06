@@ -47,6 +47,9 @@ According to the site Gambiter, this game has been around since 1894 under the n
     - [Languages Used](#languages-used)
       - [Python Packages](#python-packages)
     - [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
+  - [Testing](#testing)
+    - [PEP 8 Online](#pep-8-online)
+    - [Lighthouse](#lighthouse)
   
 - [Hangman - Game](#hangman---game)
 - [Introduction](#introduction)
@@ -84,6 +87,9 @@ According to the site Gambiter, this game has been around since 1894 under the n
     - [Languages Used](#languages-used)
       - [Python Packages](#python-packages)
     - [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
+  - [Testing](#testing)
+    - [PEP 8 Online](#pep-8-online)
+    - [Lighthouse](#lighthouse)
 
 ## User Experience - UX
 
@@ -270,6 +276,23 @@ I have used a Google sheet to save the player name, city, score and date.  This 
     * The PEP8 was used to validate all the Python code
 * [Patorjk](https://patorjk.com)
     * Patorjk (ASCII Art Generator) was used to draw the game logos
+
+## Testing
+
+### PEP 8 Online
+
+The [PEP8](http://pep8online.com/) Validator Service was used to validate every Python file in the project to ensure there were no syntax errors in the project.
+
+![PEP8](./assets/images/readme/hangman-pep8-results.jpg).
+* No errors or warnings were found during the testing of the code in PEP8
+  
+### Lighthouse 
+
+ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO on Desktop. 
+
+* Desktop Results:
+
+  ![Lighthouse Result](./assets/images/readme/hangman-lighthouse.jpg).
 
 
 
