@@ -27,42 +27,47 @@ According to the site Gambiter, this game has been around since 1894 under the n
     - [Welcome Message and Game Rules](#welcome-message-and-game-rules)
   - [Game Features](#game-features)
     - [Hangman Stage 1](#hangman-stage-1)
+    - [Hangman Stage 2](#hangman-stage-2)
+    - [Hangman Stage 3](#hangman-stage-3)
+    - [Hangman Stage 4](#hangman-stage-4)
+    - [Hangman Stage 5](#hangman-stage-5)
+    - [Hangman Stage 6](#hangman-stage-6)
+    - [Hangman Stage 7](#hangman-stage-7)
+    - [Hangman Stage 8 - Lose](#hangman-stage-8---lose)
+    - [Hangman Stage 9 - Win](#hangman-stage-9---win)
+    - [Hangman Stage 10 - Win Extra](#hangman-stage-10---win-extra)
+    - [Menu Options](#menu-options)
+    - [Leaderboard](#leaderboard)
+    - [Exit Game](#exit-game)
   
-* [Features](#features)
-    * [Logo and Intro Message](#Logo-and-Intro-Message) 
-    * [Ask Player Name and City](#Ask-Player-Name-and-City)
-    * [Empty Input for Name and City](#Empty-Input-for-Name-and-City)
-* [Game Features](#game-features)
-    * [Hangman Stage 1](#Hangman-Stage-1)
-    * [Hangman Stage 2](#Hangman-Stage-2) 
-    * [Hangman Stage 3](#Hangman-Stage-3)
-    * [Hangman Stage 4](#Hangman-Stage-4)
-    * [Hangman Stage 5](#Hangman-Stage-5)
-    * [Hangman Stage 6](#Hangman-Stage-6)
-    * [Hangman Stage 7](#Hangman-Stage-7)
-    * [Hangman Stage 8 - Lose](#Hangman-Stage-8---Lose)
-    * [Hangman Stage 9 - Win](#Hangman-Stage-9---Win)
-    * [Hangman Stage 10 - Win Extra](#Hangman-Stage-10---Win-Extra)
-    * [Menu Options](#Menu-Options)
-    * [Leaderboard](#Leaderboard)
-    * [Exit Game](#Exit-Game)
-    * [How to Play](#how-to-play)
-* [Storage Data](#Storage-Data)
-* [Technologies Used](#technologies-used)
-    * [Languages Used](#languages-used)
-    * [Python Packages](#Python-Packages)
-    * [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
-* [Testing](#testing)
-    * [PEP 8 Online](#PEP-8-Online)
-    * [Lighthouse](#Lighthouse)
-    * [Functionality](#Functionality)
-    * [Bugs](Bugs)
-* [Deployment](#deployment-this-project)
-    * [Deploying of This Project](#deployment-this-project)
-    * [Forking This Project](#forking-this-project)
-    * [Cloning This Project](#cloning-this-project)
-* [Credits](#credits)
-* [Content](#content)
+- [Hangman - Game](#hangman---game)
+- [Introduction](#introduction)
+  - [README Table Content](#readme-table-content)
+  - [User Experience - UX](#user-experience---ux)
+    - [User Stories](#user-stories)
+  - [Design](#design)
+      - [Colours](#colours)
+      - [Typography](#typography)
+    - [Flowcharts](#flowcharts)
+  - [Features](#features)
+    - [Logo and Intro Message](#logo-and-intro-message)
+    - [Ask Player Name and City](#ask-player-name-and-city)
+      - [Empty Input for Name and City](#empty-input-for-name-and-city)
+    - [Welcome Message and Game Rules](#welcome-message-and-game-rules)
+  - [Game Features](#game-features)
+    - [Hangman Stage 1](#hangman-stage-1)
+    - [Hangman Stage 2](#hangman-stage-2)
+    - [Hangman Stage 3](#hangman-stage-3)
+    - [Hangman Stage 4](#hangman-stage-4)
+    - [Hangman Stage 5](#hangman-stage-5)
+    - [Hangman Stage 6](#hangman-stage-6)
+    - [Hangman Stage 7](#hangman-stage-7)
+    - [Hangman Stage 8 - Lose](#hangman-stage-8---lose)
+    - [Hangman Stage 9 - Win](#hangman-stage-9---win)
+    - [Hangman Stage 10 - Win Extra](#hangman-stage-10---win-extra)
+    - [Menu Options](#menu-options)
+    - [Leaderboard](#leaderboard)
+    - [Exit Game](#exit-game)
 
 ## User Experience - UX
 
@@ -132,6 +137,69 @@ This feature displays where the main scene happens. Here the user can play and s
 * Current number of attempts
 * Input to guess a letter or a full word
 * Input letters to either guess a letter only or the full word
+
+### Hangman Stage 2 
+
+![Hangman Stage 2 ](./assets/images/readme/hangman-feature-6.jpg)<br><br>
+Any time the player guesses a wrong letter, a part of the hangman appears
+* 1 letter guessed wrong, the player will see the hangman and the first part of the hangman:  a rope, in green.
+
+### Hangman Stage 3
+
+![Hangman Stage 3](./assets/images/readme/hangman-feature-7.jpg)
+* 2 letters guessed wrong the player will see the hangman and 2 parts of the hangman a rope and head in green.
+
+### Hangman Stage 4
+
+![Hangman Stage 4](./assets/images/readme/hangman-feature-8.jpg)
+* 3 letters guessed wrong the player will see the hangman and 3 parts of the hangman rope, head and torso in yellow.
+
+### Hangman Stage 5
+
+![Hangman Stage 5](./assets/images/readme/hangman-feature-9.jpg)
+* 4 letters guessed wrong the player will see the hangman and 4 parts of the hangman rope, head, torso and the right arm in yellow.
+
+### Hangman Stage 6
+
+![Hangman Stage 6](./assets/images/readme/hangman-feature-10.jpg)
+* 5 letters guessed wrong the player will see the hangman and 5 parts of the hangman, rope, head, torso and both arms in red. Also the "Danger Zone" will be displayed.
+
+### Hangman Stage 7
+
+![Hangman Stage 7](./assets/images/readme/hangman-feature-11.jpg)
+* 6 letters guessed wrong and the player will see the hangman and 6 parts of the hangman rope, head, torso, both arms and left leg in red. Also the alert message "Danger Zone" will be displayed.
+
+### Hangman Stage 8 - Lose
+
+![Hangman Stage 8 - Lose](./assets/images/readme/hangman-feature-12.jpg)
+* 7 letters guessed wrong the player will see the full hangman and the game is over.
+
+### Hangman Stage 9 - Win
+
+![Hangman Stage 9 - Win](./assets/images/readme/hangman-feature-13.jpg)
+* If the player guessed the full word letter by letter, they will see this feature and will win the game and get 200 points.
+
+### Hangman Stage 10 - Win Extra
+
+![Hangman Stage 10 - Win Extra](./assets/images/readme/hangman-feature-14.jpg)
+* If the player guessed all the letters that appear in the word there by completing the word or at least guessed no more than 3 correct letters before completing the full word, this feature will appear.
+
+### Menu Options
+
+![Menu Options](./assets/images/readme/hangman-menu.jpg)
+* In the end of the game users will have access to the menu where they can choose from these options: <br>
+[A] - Play Again <br>
+[B] - Leaderboard <br>
+[C] - Exit Game
+
+### Leaderboard
+![Leaderboard](./assets/images/readme/hangman-leaderboard.jpg)
+* The Leaderboard shows the 15 players with the best scores.
+
+### Exit Game
+![Exit Game](./assets/images/readme/hangman-exit-game.jpg)
+* The players will see this message if they will chose to exit the game by typing [C].
+
 
 
 
