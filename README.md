@@ -51,6 +51,9 @@ According to the site Gambiter, this game has been around since 1894 under the n
     - [PEP 8 Online](#pep-8-online)
     - [Lighthouse](#lighthouse)
   - [Functionality](#functionality)
+  - [Bugs](#bugs)
+    - [Python Lines too Long](#python-lines-too-long)
+    - [Fixed Bug](#fixed-bug)
   
 - [Hangman - Game](#hangman---game)
 - [Introduction](#introduction)
@@ -92,6 +95,9 @@ According to the site Gambiter, this game has been around since 1894 under the n
     - [PEP 8 Online](#pep-8-online)
     - [Lighthouse](#lighthouse)
   - [Functionality](#functionality)
+  - [Bugs](#bugs)
+    - [Python Lines too Long](#python-lines-too-long)
+    - [Fixed Bug](#fixed-bug)
 
 ## User Experience - UX
 
@@ -305,6 +311,17 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
 * The game runs without any issues and as expected 
 * At the end of the game the Leaderboard is updating correctly
 * All the menu options are working without any fails
+
+## Bugs 
+### Python Lines too Long
+![Lines to long](./assets/images/readme/hangman-issue.jpg)
+![Lines to long](./assets/images/readme/hangman-issue-result.jpg)
+
+* When I first built the ASCII art for the logo I got the warning "line too long (126 > 79 characters)" from PEP8.<br>
+
+### Fixed Bug
+![Fix Bug](./assets/images/readme/hangman-issue-fixed.jpg)
+* I had to rebuild the logo using the program  Patorjk (ASCII Art Generator) to avoid these issues.
 
 
 
