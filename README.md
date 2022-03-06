@@ -39,6 +39,7 @@ According to the site Gambiter, this game has been around since 1894 under the n
     - [Menu Options](#menu-options)
     - [Leaderboard](#leaderboard)
     - [Exit Game](#exit-game)
+    - [How to Play](#how-to-play)
   
 - [Hangman - Game](#hangman---game)
 - [Introduction](#introduction)
@@ -68,6 +69,7 @@ According to the site Gambiter, this game has been around since 1894 under the n
     - [Menu Options](#menu-options)
     - [Leaderboard](#leaderboard)
     - [Exit Game](#exit-game)
+    - [How to Play](#how-to-play)
 
 ## User Experience - UX
 
@@ -199,6 +201,18 @@ Any time the player guesses a wrong letter, a part of the hangman appears
 ### Exit Game
 ![Exit Game](./assets/images/readme/hangman-exit-game.jpg)
 * The players will see this message if they will chose to exit the game by typing [C].
+
+### How to Play
+![How to Play](./assets/images/readme/hangman-explanation-1.jpg)<br>
+![How to Play](./assets/images/readme/hangman-message-back.jpg)<br>
+The player has 7 attempts to try to guess the right word by inputting letters or can try to input all the letters to correctly complete the full word try. The word is randomly chosen by the computer from a list.
+* When the game starts the player can see how many letters are in the word [1] and the computer will ask the player to input a letter or a word [7].
+* If the player guesses the right letter, they will see a message from the computer [8] the letter guessed displayed in the word length [3], the hangman stage will remain the same [2] and the score will increase by 25 points [5]
+* If the player guesses a wrong letter, they will see a message from the computer [9] the letter guessed displayed in the wrong letters guesses [4], the hangman stage will turn to the next stage [2] and the number of attempts will decrease by 1 [6]
+* When the player types an invalid input, they will see a message from the computer [10].
+* If the user guesses the right word they will see the [Winner Feature](#Hangman-Stage-9---Win)
+* If the player guessed the full word at once or at least no more than 3 letters guessed right before trying to guess the full word, they will win the game-winning 500 extra points and see this feature [Winner Feature / Extra Points](#Hangman-Stage-10---Win)
+* 7 letters guessed wrong and the player will see the [Loser Feature](#Hangman-Stage-8---lose)
 
 
 
