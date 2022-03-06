@@ -43,6 +43,10 @@ According to the site Gambiter, this game has been around since 1894 under the n
   - [Storage Data](#storage-data)
     - [Code to Connect to Google Sheet](#code-to-connect-to-google-sheet)
     - [Google Sheet Hangman Leaderboard](#google-sheet-hangman-leaderboard)
+  - [Technologies Used](#technologies-used)
+    - [Languages Used](#languages-used)
+      - [Python Packages](#python-packages)
+    - [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
   
 - [Hangman - Game](#hangman---game)
 - [Introduction](#introduction)
@@ -76,6 +80,10 @@ According to the site Gambiter, this game has been around since 1894 under the n
   - [Storage Data](#storage-data)
     - [Code to Connect to Google Sheet](#code-to-connect-to-google-sheet)
     - [Google Sheet Hangman Leaderboard](#google-sheet-hangman-leaderboard)
+  - [Technologies Used](#technologies-used)
+    - [Languages Used](#languages-used)
+      - [Python Packages](#python-packages)
+    - [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
 
 ## User Experience - UX
 
@@ -231,6 +239,37 @@ I have used a Google sheet to save the player name, city, score and date.  This 
 ### Google Sheet Hangman Leaderboard
 
 ![Google Sheet Hangman Leaderboard](./assets/images/readme/hangman-google-sheet.jpg)
+
+## Technologies Used
+### Languages Used 
+
+* [Python](https://www.python.org/)
+
+#### Python Packages
+
+* [Rondom](https://docs.python.org/3/library/random.html?highlight=random#module-random): returns a random integer to get a random word
+* [Datetime](https://pypi.org/project/DateTime/): returns the full date
+* [Gspread](https://pypi.org/project/gspread/): allows communication wit Google Sheets
+* [Colorama](https://pypi.org/project/colorama/): allows terminal text to be printed in different colours / styles
+* [Time](https://pypi.org/project/time/): defined time sleep
+* [google.oauth2.service_accoun](https://google-auth.readthedocs.io/en/stable/index.html): credentials used to validate credentials and grant access to Google service accounts
+  
+### Frameworks - Libraries - Programs Used
+
+* [Git](https://git-scm.com/)
+    * Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub
+* [GitHub](https://github.com/)
+    * GitHub is used to store the project's code after being pushed from Git
+* [Heroku](https://id.heroku.com)
+    * Heroku was used to deploy the live project
+* [VSCode](https://code.visualstudio.com/)
+    * VSCode was used to create and edit the website
+* [Lucidchart](https://lucid.app/)
+    * Lucidchart was used to create the flowchart
+* [PEP8](http://pep8online.com/)
+    * The PEP8 was used to validate all the Python code
+* [Patorjk](https://patorjk.com)
+    * Patorjk (ASCII Art Generator) was used to draw the game logos
 
 
 
