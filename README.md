@@ -50,6 +50,7 @@ According to the site Gambiter, this game has been around since 1894 under the n
   - [Testing](#testing)
     - [PEP 8 Online](#pep-8-online)
     - [Lighthouse](#lighthouse)
+  - [Functionality](#functionality)
   
 - [Hangman - Game](#hangman---game)
 - [Introduction](#introduction)
@@ -90,6 +91,7 @@ According to the site Gambiter, this game has been around since 1894 under the n
   - [Testing](#testing)
     - [PEP 8 Online](#pep-8-online)
     - [Lighthouse](#lighthouse)
+  - [Functionality](#functionality)
 
 ## User Experience - UX
 
@@ -293,6 +295,16 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
 * Desktop Results:
 
   ![Lighthouse Result](./assets/images/readme/hangman-lighthouse.jpg).
+
+  ## Functionality 
+* The terminal has no issues and is working properly 
+* The typewriter starts typing at the right time and is working correctly 
+* The input for name and city have the right behaviour and shows the user an alert if the input is empty
+* The game rules appear without any issues after the player submits their name and city
+* The option to press any key to start a game is running well
+* The game runs without any issues and as expected 
+* At the end of the game the Leaderboard is updating correctly
+* All the menu options are working without any fails
 
 
 
