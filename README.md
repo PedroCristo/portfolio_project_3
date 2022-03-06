@@ -364,7 +364,7 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
 
 1. Open [GitHub](https://github.com/)
 2. Click on the project to be forked
-3. Find the 'Fork' button at the top right of the page
+3. Find the Fork button at the top right of the page
 4. Once you click the button the fork will be in your repository
 
 ## Cloning This Project
@@ -377,8 +377,8 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
 4. Once you click the button the fork will be in your repository
 5. Open a new terminal
 6. Change the current working directory to the location that you want the cloned directory
-7. Type 'git clone' and paste the URL copied in step 3
-8. Press 'Enter' and the project is cloned
+7. Type git clone and paste the URL copied in step 3
+8. Press Enter and the project is cloned
 
 ## Credits
 
@@ -387,7 +387,7 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
 * All the content in the game is original 
 * The terminal function and template for the deployable application was provided by [Code Institute - Template](https://github.com/Code-Institute-Org/python-essentials-template)
 * The Python code for the typewriter was taken from the following tutorial: [Kwasii](https://www.youtube.com/watch?v=A_1THfBpCH
-* 
+  
 ### Information Sources / Resources
 
 * [W3Schools - Python](https://www.w3schools.com/python/)
