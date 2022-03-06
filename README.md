@@ -11,13 +11,14 @@ According to the site Gambiter, this game has been around since 1894 under the n
 
 ## README Table Content
 
-* [Introduction](#introduction)
-* [User Experience UX](#user-experience---UX)
-* [Design](#Design)
-    * [Colours](#Colours)
-    * [Typography](#typography)
-* [Logic](#logic)
-     * [Flowcharts](#flowcharts)
+- [Hangman - Game](#hangman---game)
+- [Introduction](#introduction)
+  - [README Table Content](#readme-table-content)
+  - [User Experience - UX](#user-experience---ux)
+    - [User Stories](#user-stories)
+  - [Design](#design)
+      - [Colours](#colours)
+      - [Typography](#typography)
   
 * [Features](#features)
     * [Logo and Intro Message](#Logo-and-Intro-Message) 
@@ -54,3 +55,32 @@ According to the site Gambiter, this game has been around since 1894 under the n
     * [Cloning This Project](#cloning-this-project)
 * [Credits](#credits)
 * [Content](#content)
+
+## User Experience - UX
+
+### User Stories
+
+* As a website creator, I want to:
+  
+1. Build an easy app for the users to play the game
+2. Build a game that is both enjoyable and challenging for the players
+   
+* As a new visitor, I want to:
+
+1. Be able to understand the purpose of the App and start a new game
+2. Be able to follow the score, see the wrong and right letters appear once I take a turn, and see how many tries remain before the game is over
+3. Be able to watch my results and other players' results on the Leaderboard
+   
+* As a returning visitor, I want to:
+
+1. Be able to play the game again with a different word as chosen by the computer
+2. Be challenged and try to improve on my previous scores. 
+3. Compare my scores with other users on the Leaderboard
+   
+## Design
+
+#### Colours
+* The colours in the game are supplied by the Python Colorama Model
+
+#### Typography
+* The Arial is used as the main font for the whole project
