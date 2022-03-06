@@ -19,6 +19,7 @@ According to the site Gambiter, this game has been around since 1894 under the n
   - [Design](#design)
       - [Colours](#colours)
       - [Typography](#typography)
+    - [Flowcharts](#flowcharts)
   
 * [Features](#features)
     * [Logo and Intro Message](#Logo-and-Intro-Message) 
@@ -84,3 +85,7 @@ According to the site Gambiter, this game has been around since 1894 under the n
 
 #### Typography
 * The Arial is used as the main font for the whole project
+
+### Flowcharts 
+![Flowcharts](./assets/images/readme/hangman-flowcharts.jpg)<br>
+I spent time planning and thinking about the logic and flow behind the game to ensure I had a general idea of how it could be built. I created flowcharts to assist me with the logical flow throughout the application. The charts were generated using [Lucidchart](https://lucid.app/) Integration and are shown below.<br>
