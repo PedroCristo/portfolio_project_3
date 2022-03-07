@@ -229,14 +229,14 @@ game_info = [
    |  |                                                                   |  |
    |  |  1 - You have 7 attempts to try to find the right word by         |  |
    |  |      inputting letters or the full word                           |  |
-   |  |  2 - If you guess a letter wrong you will lose an attempt and the |  |
+   |  |  2 - If you guess a wrong letter you will lose an attempt and the |  |
    |  |      hangman will begin building                                  |  |
    |  |  3 - When you reach 0 lives you will be hanged - Game Over        |  |
-   |  |   POINTS:                                                         |  |
-   |  |   25 points per letter guessed right                              |  |
-   |  |   200 points if you guess the right word                          |  |
-   |  |   500 extra points if you guess the full word at once with no     |  |
-   |  |       more than 3 letters guessed right before                    |  |
+   |  |  POINTS:                                                          |  |
+   |  |  * 25 points per letter guessed right                             |  |
+   |  |  * 200 points if you guess the right word                         |  |
+   |  |  * 500 extra points if you guess the full word at once but you    |  |
+   |  |   can not have more than 3 letters guessed right before           |  |
    |  |___________________________________________________________________|  |
    |_________________________________________________________________________|
 """,
