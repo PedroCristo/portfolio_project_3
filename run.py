@@ -129,17 +129,20 @@ def final_result(guessed, random_word, guessed_right, score):
     """
     if guessed and len(random_word) >= 6 and guessed_right <= 3:
         print(f"{Fore.GREEN}{hangman_logo[3]}")
-        print(f"""{Fore.GREEN}\n\t
-        YOU WIN, {player_name} YOU HAVE GUESSED THE FULLY WORD AT ONCE!\n""")
+        print(f"""{Fore.GREEN}
+        YOU WIN, {player_name} YOU HAVE GUESSED THE FULLY WORD AT ONCE!\n
+        """)
         score = score + EXTRA_SCORE + FULLY_WORD_SCORE
     elif guessed:
         print(f"{Fore.GREEN}{hangman_logo[2]}")
-        print(f"""{Fore.GREEN}\n\t
-        YOU WIN, {player_name} YOU HAVE GUESSED THE RIGHT WORD!\n""")
+        print(f"""{Fore.GREEN}
+        YOU WIN, {player_name} YOU HAVE GUESSED THE RIGHT WORD!\n
+        """)
         score = score + EXTRA_SCORE
     else:
-        print(F"""{Fore.RED}\n\n\t
-        YOU LOSE, {player_name} THE RIGHT WORD WAS {random_word}!""")
+        print(F"""{Fore.RED}
+        YOU LOSE, {player_name} THE RIGHT WORD WAS {random_word}!
+        """)
         print(f"{Fore.RED}{hangman_logo[1]}")
     update_worksheet(data, score)
     display_score(score)
