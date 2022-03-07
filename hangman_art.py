@@ -233,12 +233,13 @@ game_info = [
    |  |  3 - When you reach 0 lives you will be hanged - Game Over        |  |
    |  |   POINTS:                                                         |  |
    |  |   25 points per letter guessed right                              |  |
-   |  |   200 points if guess the right word guessing letters             |  |
-   |  |   500 points if you guess the full word                           |  |
+   |  |   200 points if you guess the right word                          |  |
+   |  |   500 extra points if you guess the full word at once with no     |  |
+   |  |       more than 3 letters guessed right before                    |  |
    |  |___________________________________________________________________|  |
    |_________________________________________________________________________|
 """,
- # hangman leaderbord 
+ # hangman leaderbord
  """
     ============================================================
 
