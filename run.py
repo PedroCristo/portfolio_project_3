@@ -25,8 +25,17 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('hangman_leaderboard')
 
 leaderboard = SHEET.worksheet("leaderboard")
-
 data = leaderboard.get_all_values()
+
+# CONSTS
+CORRECT_GUESSED = 25
+EXTRA_SCORE = 200
+FULLY_WORD_SCORE = 500
+PLAY_AGAIN_MSG = f"""{Fore.CYAN}
+A - PLAY AGAIN
+B - LEADERBOARD
+C - EXIT THE GAME
+"""
 
 print(f"{Fore.GREEN}{hangman_logo[0]}")
 typewriter(f"""
@@ -57,15 +66,6 @@ if __name__ == '__main__':
     input(f"""\n{Fore.CYAN}
     {player_name}, PRESS ANY KEY TO START THE GAME.\n    >>> """)
 
-    # CONSTS
-    CORRECT_GUESSED = 25
-    EXTRA_SCORE = 200
-    FULLY_WORD_SCORE = 500
-    PLAY_AGAIN_MSG = f"""{Fore.CYAN}
-    A - PLAY AGAIN
-    B - LEADERBOARD
-    C - EXIT THE GAME
-    """
 
 
 def game(random_word):
