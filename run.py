@@ -44,30 +44,6 @@ Y O U   H A V E   A   P R E T T Y   N E C K   T O\t\n
 P L A Y   T H I S   G A M E   B Y   T H E   W A Y ! !\t\n
 E N T E R   Y O U R   N A M E\t\n\nA N D   G O O D   L U C K ! !\n""")
 
-if __name__ == '__main__':
-
-    # Allows the user to input their own name and city to play the game
-    while True:
-        player_name = input(f"\n{Fore.CYAN}NAME:\n>>> ").strip().upper()
-        if len(player_name) == 0:
-            print(f"{Fore.RED}This is not a valid name!")
-            continue
-        else:
-            break
-    while True:
-        player_city = input(f"{Fore.CYAN}YOUR CITY:\n>>> ").strip().upper()
-        if len(player_city) == 0:
-            print(f"{Fore.RED}This is not a valid city!")
-            continue
-        else:
-            break
-    print(f"""{Fore.YELLOW}\n\t
-    HELLO {player_name}, WELCOME TO THE HANGMAN GAME!\n""")
-    print(f"{Fore.BLUE}{game_info[0]}")
-    input(f"""\n{Fore.CYAN}
-    {player_name}, PRESS ANY KEY TO START THE GAME.\n    >>> """)
-
-
 
 def game(random_word):
     """
@@ -235,7 +211,7 @@ def exit_menu():
     Play again, Leaderboard, and Exit the game
     """
     while True:
-        continue_playing = input(f"{PLAY_AGAIN_MSG}\n\t >>>").lower()
+        continue_playing = input(f"{PLAY_AGAIN_MSG}\n\t>>>").lower()
         if continue_playing == "a":
             print(f"\n\tYou have decided to continue playing the game.\n")
             main()
@@ -258,7 +234,29 @@ def main():
     """
     random_word = get_word()
     game(random_word)
-if __name__ == "__main__":
+
+if __name__ == '__main__':
+
+    # Allows the user to input their own name and city to play the game
+    while True:
+        player_name = input(f"\n{Fore.CYAN}NAME:\n>>> ").strip().upper()
+        if len(player_name) == 0:
+            print(f"{Fore.RED}This is not a valid name!")
+            continue
+        else:
+            break
+    while True:
+        player_city = input(f"{Fore.CYAN}YOUR CITY:\n>>> ").strip().upper()
+        if len(player_city) == 0:
+            print(f"{Fore.RED}This is not a valid city!")
+            continue
+        else:
+            break
+    print(f"""{Fore.YELLOW}\n\t
+    HELLO {player_name}, WELCOME TO THE HANGMAN GAME!\n""")
+    print(f"{Fore.BLUE}{game_info[0]}")
+    input(f"""\n{Fore.CYAN}
+    {player_name}, PRESS ANY KEY TO START THE GAME.\n    >>> """)
 
     main()
 
