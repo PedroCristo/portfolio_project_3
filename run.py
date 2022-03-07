@@ -259,18 +259,3 @@ if __name__ == '__main__':
     {player_name}, PRESS ANY KEY TO START THE GAME.\n    >>> """)
 
     main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
