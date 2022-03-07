@@ -223,7 +223,7 @@ def main():
             random_word = get_word()
             game(random_word)
 
-        user_input = input(f"{PLAY_AGAIN_MSG}>>>").lower()
+        user_input = input(f"{PLAY_AGAIN_MSG}>>> ").lower()
         if user_input == "a":
             print(f"\n\tYou have decided to continue playing the game.\n")
             play_game = True
