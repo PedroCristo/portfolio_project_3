@@ -6,7 +6,7 @@ from hangman_art import *
 from hangman_extras import *
 
 import colorama
-from colorama import Fore, Back
+from colorama import Fore
 colorama.init(autoreset=True)
 
 # Import date from datetime
