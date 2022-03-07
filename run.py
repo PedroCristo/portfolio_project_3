@@ -143,7 +143,6 @@ def final_result(guessed, random_word, guessed_right, score):
         print(f"{Fore.RED}{hangman_logo[1]}")
     update_worksheet(data, score)
     display_score(score)
-    exit_menu()
 
 
 def word_space(full_word):
@@ -205,19 +204,30 @@ def display_leaderboard():
     ==============================================================""")
 
 
-def exit_menu():
+def main():
     """
-    Give to the player 3 choices at the end of the game.
-    Play again, Leaderboard, and Exit the game
+    Starts the game with a random word.
+
+    Once a game run is complete, give to the player 3 choices at the end:
+        * Play again
+        * Leaderboard
+        * Exit the game
     """
+
+    play_game = True
     while True:
-        continue_playing = input(f"{PLAY_AGAIN_MSG}\n\t>>>").lower()
-        if continue_playing == "a":
+        if play_game:
+            random_word = get_word()
+            game(random_word)
+
+        user_input = input(f"{PLAY_AGAIN_MSG}\n\t>>>").lower()
+        if user_input == "a":
             print(f"\n\tYou have decided to continue playing the game.\n")
-            main()
-        elif continue_playing == "b":
+            play_game = True
+        elif user_input == "b":
             display_leaderboard()
-        elif continue_playing == "c":
+            play_game = False
+        elif user_input == "c":
             print(f"{Fore.RED}\n\tNow closing the game...")
             print(f"""{Fore.CYAN}
             \n\tThanks for playing, {player_name.capitalize()}.
@@ -226,14 +236,7 @@ def exit_menu():
         else:
             print(f"""{Fore.YELLOW}\n\t
             That is not a valid option. Please try again.\n""")
-
-
-def main():
-    """
-    Calls the get_word and game functions
-    """
-    random_word = get_word()
-    game(random_word)
+            play_game = False
 
 if __name__ == '__main__':
 
