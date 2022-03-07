@@ -229,7 +229,7 @@ game_info = [
    |  |                                                                   |  |
    |  |  1 - You have 7 attempts to try to find the right word by         |  |
    |  |      inputting letters or the full word                           |  |
-   |  |  2 - If you get a letter wrong you will lose a life and the       |  |
+   |  |  2 - If you guess a letter wrong you will lose an attempt and the |  |
    |  |      hangman will begin building                                  |  |
    |  |  3 - When you reach 0 lives you will be hanged - Game Over        |  |
    |  |   POINTS:                                                         |  |
