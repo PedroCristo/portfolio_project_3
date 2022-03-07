@@ -216,7 +216,7 @@ I have used a Google sheet to save the player name, city, score and date.  This 
 
 #### Python Packages
 
-* [Rondom](https://docs.python.org/3/library/random.html?highlight=random#module-random): returns a random integer to get a random word
+* [Random](https://docs.python.org/3/library/random.html?highlight=random#module-random): returns a random integer to get a random word
 * [Datetime](https://pypi.org/project/DateTime/): returns the full date
 * [Gspread](https://pypi.org/project/gspread/): allows communication wit Google Sheets
 * [Colorama](https://pypi.org/project/colorama/): allows terminal text to be printed in different colours / styles
