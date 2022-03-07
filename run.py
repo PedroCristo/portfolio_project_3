@@ -33,9 +33,9 @@ CORRECT_GUESSED = 25
 EXTRA_SCORE = 200
 FULLY_WORD_SCORE = 500
 PLAY_AGAIN_MSG = f"""{Fore.CYAN}
-\tA - PLAY AGAIN
-\tB - LEADERBOARD
-\tC - EXIT THE GAME
+A - PLAY AGAIN
+B - LEADERBOARD
+C - EXIT THE GAME
 """
 
 print(f"{Fore.GREEN}{hangman_logo[0]}")
@@ -223,7 +223,7 @@ def main():
             random_word = get_word()
             game(random_word)
 
-        user_input = input(f"{PLAY_AGAIN_MSG}\n\t>>>").lower()
+        user_input = input(f"{PLAY_AGAIN_MSG}>>>").lower()
         if user_input == "a":
             print(f"\n\tYou have decided to continue playing the game.\n")
             play_game = True
