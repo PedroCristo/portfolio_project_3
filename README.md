@@ -15,7 +15,6 @@ According to the site [Gambiter](http://gambiter.com/paper-pencil/Hangman_game.h
 * [User Experience UX](#user-experience---UX)
 * [Design](#Design)
     * [Colours](#Colours)
-    * [Typography](#typography)
 * [Logic](#logic)
      * [Flowcharts](#flowcharts)
 
@@ -79,9 +78,6 @@ According to the site [Gambiter](http://gambiter.com/paper-pencil/Hangman_game.h
 
 #### Colours
 * The colours in the game are supplied by the Python Colorama Model
-
-#### Typography
-* The Arial is used as the main font for the whole project
 
 ### Flowcharts 
 ![Flowcharts](./assets/images/readme/hangman-flowcharts.jpg)<br>
