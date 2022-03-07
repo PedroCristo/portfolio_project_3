@@ -140,10 +140,10 @@ def final_result(guessed, random_word, guessed_right, score):
         """)
         score = score + EXTRA_SCORE
     else:
+        print(f"{Fore.RED}{hangman_logo[1]}")
         print(F"""{Fore.RED}
         YOU LOSE, {player_name} THE RIGHT WORD WAS {random_word}!
         """)
-        print(f"{Fore.RED}{hangman_logo[1]}")
     update_worksheet(data, score)
     display_score(score)
 
