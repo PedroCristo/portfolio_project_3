@@ -236,7 +236,7 @@ game_info = [
    |  |  * 25 points per letter guessed right                             |  |
    |  |  * 200 points if you guess the right word                         |  |
    |  |  * 500 extra points if you guess the full word at once but you    |  |
-   |  |   can not have more than 3 letters guessed right before           |  |
+   |  |    can not have more than 3 letters guessed right before          |  |
    |  |___________________________________________________________________|  |
    |_________________________________________________________________________|
 """,
