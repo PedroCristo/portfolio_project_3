@@ -12,7 +12,7 @@ words = [
 
 def get_word():
     """
-    Get a random word from the word list in hangman_words.py
+    Get a random word from the words list
     """
     random_word = random.choice(words)
     return random_word.upper()
