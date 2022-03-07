@@ -25,6 +25,7 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('hangman_leaderboard')
 
 leaderboard = SHEET.worksheet("leaderboard")
+
 data = leaderboard.get_all_values()
 
 # CONSTS
@@ -32,9 +33,9 @@ CORRECT_GUESSED = 25
 EXTRA_SCORE = 200
 FULLY_WORD_SCORE = 500
 PLAY_AGAIN_MSG = f"""{Fore.CYAN}
-A - PLAY AGAIN
-B - LEADERBOARD
-C - EXIT THE GAME
+\tA - PLAY AGAIN
+\tB - LEADERBOARD
+\tC - EXIT THE GAME
 """
 
 print(f"{Fore.GREEN}{hangman_logo[0]}")
@@ -234,7 +235,7 @@ def exit_menu():
     Play again, Leaderboard, and Exit the game
     """
     while True:
-        continue_playing = input(f"{PLAY_AGAIN_MSG}\n   >>>").lower()
+        continue_playing = input(f"{PLAY_AGAIN_MSG}\n\t >>>").lower()
         if continue_playing == "a":
             print(f"\n\tYou have decided to continue playing the game.\n")
             main()
