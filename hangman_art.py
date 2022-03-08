@@ -234,9 +234,9 @@ game_info = [
    |  |  3 - When you reach 0 lives you will be hanged - Game Over        |  |
    |  |  POINTS:                                                          |  |
    |  |  * 25 points per letter guessed right                             |  |
-   |  |  * 200 points if you guess the right word                         |  |
-   |  |  * 500 extra points if you guess the full word at once but you    |  |
-   |  |    can not have more than 3 letters guessed right before          |  |
+   |  |  * 200 points if you guessed the right word                       |  |
+   |  |  * 500 extra points to complete the full word with max 3  letters |  |
+   |  |    already guessed.                                               |  |
    |  |___________________________________________________________________|  |
    |_________________________________________________________________________|
 """,
