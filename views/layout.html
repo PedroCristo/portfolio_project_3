@@ -15,6 +15,13 @@
             background: #000000;
         }
 
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         /**
         * Default styles for xterm.js
         */
@@ -168,7 +175,8 @@
         }
     </style>
 </head>
-
-@{body}
+<div id="container">
+    @{body}
+</div>
 
 </html>
