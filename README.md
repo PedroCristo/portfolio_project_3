@@ -333,7 +333,7 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
 
 ## Special Thanks
 
-  * Special thanks to my mentor Sandeep Aggarwal, my colleagues at Code Institute, Kasia Bogucka, and Mairéad Gillic for their assistance throughout this project.
+  * Special thanks to my mentor Sandeep Aggarwal, my colleagues at Code Institute, Kasia Bogucka, Shellie Downie, and Mairéad Gillic for their assistance throughout this project.
 
 
 
