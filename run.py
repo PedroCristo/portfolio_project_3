@@ -210,7 +210,6 @@ def display_leaderboard():
 def main():
     """
     Starts the game with a random word.
-
     Once a game run is complete, give to the player 3 choices at the end:
         * Play again
         * Leaderboard
