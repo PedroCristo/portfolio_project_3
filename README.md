@@ -59,20 +59,20 @@ According to the site [Gambiter](http://gambiter.com/paper-pencil/Hangman_game.h
 
 * As a website creator, I want to:
   
-1. Build an easy app for the users to play the game
-2. Build a game that is both enjoyable and challenging for the players
+1. Build an easy app for the users to play the game.
+2. Build a game that is both enjoyable and challenging for the players.
    
 * As a new visitor, I want to:
 
-1. Be able to understand the purpose of the App and start a new game
-2. Be able to follow the score, see the wrong and right letters appear once I take a turn, and see how many tries remain before the game is over
-3. Be able to watch my results and other players' results on the Leaderboard
+1. Be able to understand the purpose of the App and start a new game.
+2. Be able to follow the score, see the wrong and right letters appear once I take a turn, and see how many tries remain before the game is over.
+3. Be able to watch my results and other players' results on the Leaderboard.
    
 * As a returning visitor, I want to:
 
-1. Be able to play the game again with a different word as chosen by the computer
+1. Be able to play the game again with a different word as chosen by the computer.
 2. Be challenged and try to improve on my previous scores. 
-3. Compare my scores with other users on the Leaderboard
+3. Compare my scores with other users on the Leaderboard.
    
 ## Design
 
@@ -94,11 +94,11 @@ I spent time planning and thinking about the logic and flow behind the game to e
 ### Ask Player Name and City
 
 ![Ask Player Name and City](./assets/images/readme/hangman-feature-2.jpg)
-* After the player sees the intro feature the computer will ask the user's to input their name and city.<br>
+* After the player sees the intro feature, the computer will ask the user's to input their name and city.<br>
 
 #### Empty Input for Name and City
 ![Empty Input for Name and City](./assets/images/readme/hangman-feature-3.jpg)
-* If the player does not input their name and city this alert will appear.<br>
+* If the player does not input their name and city, this alert will appear.<br>
 
 ### Welcome Message and Game Rules
 ![Welcome Message and Game Rules](./assets/images/readme/hangman-feature-4.jpg)
@@ -110,7 +110,7 @@ I spent time planning and thinking about the logic and flow behind the game to e
 ![Game Feature](./assets/images/readme/hangman-feature-5.jpg)<br><br>
 
 This feature displays where the main scene happens. Here the user can play and see the following information about the game:
-* Numbers of letters choosen by the computer 
+* Numbers of letters chosen by the computer 
 * Hangman stages
 * Letters guessed right
 * Letters guessed wrong
@@ -128,27 +128,27 @@ Any time the player guesses a wrong letter, a part of the hangman appears
 ### Hangman Stage 3
 
 ![Hangman Stage 3](./assets/images/readme/hangman-feature-7.jpg)
-* 2 letters guessed wrong the player will see the hangman and 2 parts of the hangman a rope and head in green.
+* 2 letters guessed wrong the player will see the hangman and 2 parts of the hangman a rope, and head in green.
 
 ### Hangman Stage 4
 
 ![Hangman Stage 4](./assets/images/readme/hangman-feature-8.jpg)
-* 3 letters guessed wrong the player will see the hangman and 3 parts of the hangman rope, head and torso in yellow.
+* 3 letters guessed wrong the player will see the hangman and 3 parts of the hangman rope, head, and torso in yellow.
 
 ### Hangman Stage 5
 
 ![Hangman Stage 5](./assets/images/readme/hangman-feature-9.jpg)
-* 4 letters guessed wrong the player will see the hangman and 4 parts of the hangman rope, head, torso and the right arm in yellow.
+* 4 letters guessed wrong the player will see the hangman and 4 parts of the hangman rope, head, torso, and the right arm in yellow.
 
 ### Hangman Stage 6
 
 ![Hangman Stage 6](./assets/images/readme/hangman-feature-10.jpg)
-* 5 letters guessed wrong the player will see the hangman and 5 parts of the hangman, rope, head, torso and both arms in red. Also the "Danger Zone" will be displayed.
+* 5 letters guessed wrong the player will see the hangman and 5 parts of the hangman, rope, head, torso, and both arms in red. Also the "Danger Zone" will be displayed.
 
 ### Hangman Stage 7
 
 ![Hangman Stage 7](./assets/images/readme/hangman-feature-11.jpg)
-* 6 letters guessed wrong and the player will see the hangman and 6 parts of the hangman rope, head, torso, both arms and left leg in red. Also the alert message "Danger Zone" will be displayed.
+* 6 letters guessed wrong and the player will see the hangman and 6 parts of the hangman rope, head, torso, both arms, and left leg in red. Also the alert message "Danger Zone" will be displayed.
 
 ### Hangman Stage 8 - Lose
 
@@ -163,7 +163,7 @@ Any time the player guesses a wrong letter, a part of the hangman appears
 ### Hangman Stage 10 - Win Extra
 
 ![Hangman Stage 10 - Win Extra](./assets/images/readme/hangman-feature-14.jpg)
-* If the player guessed all the letters that appear in the word there by completing the word or at least guessed no more than 3 correct letters before completing the full word, this feature will appear.
+* If the player guessed all the letters that appear in the word thereby completing the word or at least guessing no more than 3 correct letters before completing the full word, this feature will appear.
 
 ### Menu Options
 
@@ -195,7 +195,7 @@ The player has 7 attempts to try to guess the right word by inputting letters or
 
 ## Storage Data
 
-I have used a Google sheet to save the player name, city, score and date.  This sheet is connected to the code through the Google Drive and Google Sheet API by the Google Cloud Platform. This method allows me to send and receive data as I had access to the Google Sheet API credentials. I also added in the Config Vars to these credentials when I was deploying the project in Heroku. As this is sensitive data, I had to add the creds.json in the Git ignore file. This would ensure that these credentials are not pushed to the repository.
+I have used a Google sheet to save the player name, city, score, and date.  This sheet is connected to the code through the Google Drive and Google Sheet API by the Google Cloud Platform. This method allows me to send and receive data as I had access to the Google Sheet API credentials. I also added in the Config Vars to these credentials when I was deploying the project in Heroku. As this is sensitive data, I had to add the creds.json in the Git ignore file. This would ensure that these credentials are not pushed to the repository.
 
 ### Code to Connect to Google Sheet
 
@@ -247,7 +247,7 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
   
 ### Lighthouse 
 
- Lighthouse was used to test Performance, Best Practices, Accessibility and SEO on Desktop. 
+ Lighthouse was used to test Performance, Best Practices, Accessibility, and SEO on the Desktop.
 
 * Desktop Results:
 
@@ -256,11 +256,11 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
   ## Functionality 
 * The terminal has no issues and is working properly 
 * The typewriter starts typing at the right time and is working correctly 
-* The input for name and city have the right behaviour and shows the user an alert if the input is empty
+* The input for name and city have the right behavior and shows the user an alert if the input is empty
 * The game rules appear without any issues after the player submits their name and city
 * The option to press any key to start a game is running well
 * The game runs without any issues and as expected 
-* At the end of the game the Leaderboard is updating correctly
+* At the end of the game, the Leaderboard is updating correctly
 * All the menu options are working without any fails
 
 ## Bugs 
@@ -274,12 +274,10 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
 ![Fix Bug](./assets/images/readme/hangman-issue-fixed.jpg)
 * I had to rebuild the logo using the program  Patorjk (ASCII Art Generator) to avoid these issues.
 
-## Deployment of This Project
-
 * This site was deployed by completing the following steps:
 
 1. Log in to [Heroku](https://id.heroku.com) or create an account
-2. On the main page click the button labelled New in the top right corner and from the drop-down menu select Create New App
+2. On the main page click the button labeled New in the top right corner and from the drop-down menu select Create New App
 3. You must enter a unique app name
 4. Next select your region
 5. Click on the Create App button
@@ -310,7 +308,7 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
   
 1. Open [GitHub](https://github.com/)
 2. Click on the project to be cloned
-3. You will be provided with three options to choose from, HTTPS, SSH or GitHub CLI, click the clipboard icon in order to copy the URL
+3. You will be provided with three options to choose from, HTTPS, SSH, or GitHub CLI, click the clipboard icon in order to copy the URL
 4. Once you click the button the fork will be in your repository
 5. Open a new terminal
 6. Change the current working directory to the location that you want the cloned directory
