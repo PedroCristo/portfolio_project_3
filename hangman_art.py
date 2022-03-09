@@ -235,7 +235,7 @@ game_info = [
    |  |  POINTS:                                                          |  |
    |  |  * 25 points per letter guessed right                             |  |
    |  |  * 200 points if you guessed the right word                       |  |
-   |  |  * 500 extra points to complete the full word with max 3  letters |  |
+   |  |  * 500 extra points to complete the full word with max 3 letters  |  |
    |  |    already guessed.                                               |  |
    |  |___________________________________________________________________|  |
    |_________________________________________________________________________|
