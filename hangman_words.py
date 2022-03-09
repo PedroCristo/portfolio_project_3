@@ -6,7 +6,15 @@ words = [
     "Brazil",
     "Japan",
     "Dublin",
-    "India"
+    "India",
+    "Luanda",
+    "Copenhagen",
+    "Brazzaville",
+    "Jakarta",
+    "Amsterdam",
+    "Thailand",
+    "Turkmenistan",
+    "Switzerland"
 ]
 
 
