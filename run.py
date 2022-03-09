@@ -130,7 +130,7 @@ def final_result(guessed, random_word, guessed_right, score):
     if guessed and len(random_word) >= 6 and guessed_right <= 3:
         print(f"{Fore.GREEN}{hangman_logo[3]}")
         print(f"""{Fore.GREEN}
-        YOU WIN {player_name}, YOU HAVE GUESSED THE FULLY WORD AT ONCE!\n
+        YOU WIN {player_name}, YOU HAVE GUESSED THE WORD COMPLETELY AT ONCE!\n
         """)
         score = score + EXTRA_SCORE + FULLY_WORD_SCORE
     elif guessed:
