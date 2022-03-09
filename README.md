@@ -3,7 +3,7 @@
 # Introduction
 Project milestone 3 for Code Institute Full-stack development program: Python Terminal.<br><brZ>
 Hangman is a Python terminal game, which runs in the Code Institute mock terminal on Heroku. The main goal of the game is to guess letters in order to find the word that the computer randomly selects. This project was inspired by the pencil guessing game for two or more players. 
-According to the site [Gambiter](http://gambiter.com/paper-pencil/Hangman_game.html), this game has been around since 1894 under the name "Birds, Beasts, and Fishes".
+According to the site [Gambiter](http://gambiter.com/paper-pencil/Hangman_game.html), this game has been around since 1894 under the name "Birds, Beasts and Fishes".
 
 [Live Project Here](https://portfolio-project-3.herokuapp.com/)
 
@@ -127,27 +127,27 @@ Any time the player guesses a wrong letter, a part of the hangman appears
 ### Hangman Stage 3
 
 ![Hangman Stage 3](./assets/images/readme/hangman-feature-7.jpg)
-* 2 letters guessed wrong the player will see the hangman and 2 parts of the hangman a rope, and head in green.
+* 2 letters guessed wrong the player will see the hangman and 2 parts of the hangman a rope and head in green.
 
 ### Hangman Stage 4
 
 ![Hangman Stage 4](./assets/images/readme/hangman-feature-8.jpg)
-* 3 letters guessed wrong the player will see the hangman and 3 parts of the hangman rope, head, and torso in yellow.
+* 3 letters guessed wrong the player will see the hangman and 3 parts of the hangman rope, head and torso in yellow.
 
 ### Hangman Stage 5
 
 ![Hangman Stage 5](./assets/images/readme/hangman-feature-9.jpg)
-* 4 letters guessed wrong the player will see the hangman and 4 parts of the hangman rope, head, torso, and the right arm in yellow.
+* 4 letters guessed wrong the player will see the hangman and 4 parts of the hangman rope, head, torso and the right arm in yellow.
 
 ### Hangman Stage 6
 
 ![Hangman Stage 6](./assets/images/readme/hangman-feature-10.jpg)
-* 5 letters guessed wrong the player will see the hangman and 5 parts of the hangman, rope, head, torso, and both arms in red. Also the alert message "Danger Zone" will be displayed.
+* 5 letters guessed wrong the player will see the hangman and 5 parts of the hangman, rope, head, torso and both arms in red. Also the alert message "Danger Zone" will be displayed.
 
 ### Hangman Stage 7
 
 ![Hangman Stage 7](./assets/images/readme/hangman-feature-11.jpg)
-* 6 letters guessed wrong and the player will see the hangman and 6 parts of the hangman rope, head, torso, both arms, and left leg in red. Also the alert message "Danger Zone" will be displayed.
+* 6 letters guessed wrong and the player will see the hangman and 6 parts of the hangman rope, head, torso, both arms and left leg in red. Also the alert message "Danger Zone" will be displayed.
 
 ### Hangman Stage 8 - Lose
 
@@ -194,7 +194,7 @@ The player has 7 attempts to try to guess the right word by inputting letters or
 
 ## Storage Data
 
-I have used a Google sheet to save the player name, city, score, and date.  This sheet is connected to the code through the Google Drive and Google Sheet API by the Google Cloud Platform. This method allows me to send and receive data as I had access to the Google Sheet API credentials. I also added in the Config Vars to these credentials when I was deploying the project in Heroku. As this is sensitive data, I had to add the creds.json in the Git ignore file. This would ensure that these credentials are not pushed to the repository.
+I have used a Google sheet to save the player name, city, score and date.  This sheet is connected to the code through the Google Drive and Google Sheet API by the Google Cloud Platform. This method allows me to send and receive data as I had access to the Google Sheet API credentials. I also added in the Config Vars to these credentials when I was deploying the project in Heroku. As this is sensitive data, I had to add the creds.json in the Git ignore file. This would ensure that these credentials are not pushed to the repository.
 
 ### Code to Connect to Google Sheet
 
@@ -246,7 +246,7 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
   
 ### Lighthouse 
 
- Lighthouse was used to test Performance, Best Practices, Accessibility, and SEO on the Desktop.
+ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO on the Desktop.
 
 * Desktop Results:
 
@@ -334,7 +334,7 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
 
 ## Special Thanks
 
-  * Special thanks to my mentor Sandeep Aggarwal, my colleagues at Code Institute, Kasia Bogucka, Shellie Downie, and Mairéad Gillic for their assistance throughout this project.
+  * Special thanks to my mentor Sandeep Aggarwal, my colleagues at Code Institute, Kasia Bogucka, Shellie Downie and Mairéad Gillic for their assistance throughout this project.
 
 
 
