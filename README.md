@@ -45,11 +45,10 @@ According to the site [Gambiter](http://gambiter.com/paper-pencil/Hangman_game.h
     * [PEP 8 Online](#PEP-8-Online)
     * [Lighthouse](#Lighthouse)
     * [Functionality](#Functionality)
-    * [Bugs](Bugs)
-* [Deployment](#deployment-this-project)
-    * [Deploying of This Project](#deployment-this-project)
-    * [Forking This Project](#forking-this-project)
-    * [Cloning This Project](#cloning-this-project)
+    * [Bugs](Bugs
+* [Deploying this Project](#deployment-this-project)
+    * [Forking this Project](#forking-this-project)
+    * [Cloning this Project](#cloning-this-project)
 * [Credits](#credits)
 * [Content](#content)
 
@@ -143,7 +142,7 @@ Any time the player guesses a wrong letter, a part of the hangman appears
 ### Hangman Stage 6
 
 ![Hangman Stage 6](./assets/images/readme/hangman-feature-10.jpg)
-* 5 letters guessed wrong the player will see the hangman and 5 parts of the hangman, rope, head, torso, and both arms in red. Also the "Danger Zone" will be displayed.
+* 5 letters guessed wrong the player will see the hangman and 5 parts of the hangman, rope, head, torso, and both arms in red. Also the alert message "Danger Zone" will be displayed.
 
 ### Hangman Stage 7
 
@@ -184,7 +183,7 @@ Any time the player guesses a wrong letter, a part of the hangman appears
 ### How to Play
 ![How to Play](./assets/images/readme/hangman-explanation-1.jpg)<br>
 ![How to Play](./assets/images/readme/hangman-message-back.jpg)<br>
-The player has 7 attempts to try to guess the right word by inputting letters or can try to input all the letters to correctly complete the full word try. The word is randomly chosen by the computer from a list.
+The player has 7 attempts to try to guess the right word by inputting letters or can try to input all the letters to correctly complete the full . The word is randomly chosen by the computer from a list.
 * When the game starts the player can see how many letters are in the word [1] and the computer will ask the player to input a letter or a word [7].
 * If the player guesses the right letter, they will see a message from the computer [8] the letter guessed displayed in the word length [3], the hangman stage will remain the same [2] and the score will increase by 25 points [5]
 * If the player guesses a wrong letter, they will see a message from the computer [9] the letter guessed displayed in the wrong letters guesses [4], the hangman stage will turn to the next stage [2] and the number of attempts will decrease by 1 [6]
@@ -214,7 +213,7 @@ I have used a Google sheet to save the player name, city, score, and date.  This
 
 * [Random](https://docs.python.org/3/library/random.html?highlight=random#module-random): returns a random integer to get a random word
 * [Datetime](https://pypi.org/project/DateTime/): returns the full date
-* [Gspread](https://pypi.org/project/gspread/): allows communication wit Google Sheets
+* [Gspread](https://pypi.org/project/gspread/): allows communication with Google Sheets
 * [Colorama](https://pypi.org/project/colorama/): allows terminal text to be printed in different colours / styles
 * [Time](https://pypi.org/project/time/): defined time sleep
 * [google.oauth2.service_accoun](https://google-auth.readthedocs.io/en/stable/index.html): credentials used to validate credentials and grant access to Google service accounts
@@ -256,7 +255,7 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
   ## Functionality 
 * The terminal has no issues and is working properly 
 * The typewriter starts typing at the right time and is working correctly 
-* The input for name and city have the right behavior and shows the user an alert if the input is empty
+* The input for name and city have the right behaviour and shows the user an alert if the input is empty
 * The game rules appear without any issues after the player submits their name and city
 * The option to press any key to start a game is running well
 * The game runs without any issues and as expected 
@@ -272,12 +271,14 @@ The [PEP8](http://pep8online.com/) Validator Service was used to validate every 
 
 ### Fixed Bug
 ![Fix Bug](./assets/images/readme/hangman-issue-fixed.jpg)
-* I had to rebuild the logo using the program  Patorjk (ASCII Art Generator) to avoid these issues.
+* I had to rebuild the logo using the program Patorjk (ASCII Art Generator) to avoid these issues.
+* 
+## Deploying this Project
 
 * This site was deployed by completing the following steps:
 
 1. Log in to [Heroku](https://id.heroku.com) or create an account
-2. On the main page click the button labeled New in the top right corner and from the drop-down menu select Create New App
+2. On the main page click the button labelled New in the top right corner and from the drop-down menu select Create New App
 3. You must enter a unique app name
 4. Next select your region
 5. Click on the Create App button
