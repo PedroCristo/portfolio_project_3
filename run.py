@@ -124,8 +124,8 @@ def game(random_word):
 
 def final_result(guessed, random_word, guessed_right, score):
     """
-    Check if the player won the game guessing the word letter
-    by letter or the word at once or if the player loses the game
+    Check if the player loses or won the game guessing the word letter
+    by letter or the word at once
     """
     if guessed and len(random_word) >= 6 and guessed_right <= 3:
         print(f"{Fore.GREEN}{hangman_logo[3]}")
